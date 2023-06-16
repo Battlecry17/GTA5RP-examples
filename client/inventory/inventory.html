@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/83921ec397.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="./css/inventory.css">
+</head>
+
+<body>
+
+    <div class="personalInventory">
+        <div id="commonBlock" class="container generalBlock">
+            <h1 class="blockTitles">Инвентарь</h1>
+        </div>
+
+        <div class="btn-group btn-group-toggle topButtons" data-toggle="buttons">
+            <button id="common" class="btn btn-secondary categoryButtons topButton"><img class="categoryImages"
+                    src="css/general.png" alt=""></button>
+            <button id="food" class="btn btn-secondary categoryButtons"><img class="categoryImages" src="css/meal.png"
+                    alt=""></button>
+            <button id="drink" class="btn btn-secondary categoryButtons"><img class="categoryImages"
+                    src="css/drinks.png" alt=""></button>
+            <button id="weapon" class="btn btn-secondary categoryButtons"><img class="categoryImages"
+                    src="css/weapons.png" alt=""></button>
+            <button id="clothes" class="btn btn-secondary categoryButtons bottomButton"><img class="categoryImages"
+                    src="css/clothes.png" alt=""></button>
+        </div>
+
+    </div>
+
+    <div class="container charInventory">
+        <h1 class="blockTitles">Снаряжение</h1>
+        <div class="row justify-content-md-center charInventoryRows firstInventoryElementRow">
+            <div class="inventoryParts" id="headInventoryPart"></div>
+        </div>
+        <div class="row justify-content-md-center charInventoryRows">
+            <div class="inventoryParts" id="torsoInventoryPart"></div>
+        </div>
+        <div class="row middleRow">
+            <div class="inventoryParts" id="weaponInventoryPart"></div>
+        </div>
+        <div class="row justify-content-md-center charInventoryRows">
+            <div class="inventoryParts" id="legsInventoryPart"></div>
+        </div>
+        <div class="row justify-content-md-center charInventoryRows">
+            <div class="inventoryParts" id="shoesInventoryPart"></div>
+        </div>
+
+    </div>
+
+    <div id="context-menu">
+        <button id="unfoButton" class="btn btn-secondary contextBtn">Информация</button>
+        <button id="useButton" class="btn btn-secondary contextBtn">Использовать</button>
+        <button id="dropButton" class="btn btn-secondary contextBtn">Выбросить</button>
+    </div>
+
+    <div class="container" id="dropYesNo">
+        <h1 id="dropQuestion">Вы действительно хотите выбросить оружие?</h1>
+        <button id="dropNo" class="btn btn-secondary">Нет</button>
+        <button id="dropYes" class="btn btn-secondary">Да</button>
+    </div>
+    <script src="inventoryB.js"></script>
+</body>
+
+</html>

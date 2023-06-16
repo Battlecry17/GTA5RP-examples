@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="package://jobs/style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Andika&display=swap');
+        </style>
+</head>
+<body>
+    <div id="generalStart">
+        <h1>Работа водителем автобуса</h1>
+        <div class="innerDiv">
+            <h2 class="description">Задача: </h2><h2> довезти груз в сохранности, по указанному на карте адресу</h2>
+        </div>
+        <div class="innerDiv">
+            <h2 class="description">Награда: </h2><h2><i>от 30$ до 90$</i> в зависимости от длинны маршрута</h2>
+        </div>
+        <div id="buttonsDiv">
+            <button id="start" class="primaryB">Выбрать маршрут</button>
+            <button id="refuse" class="primaryB" onclick="mp.trigger('destroyTruckerBr');">Отказаться</button>
+            <button class="startRoad secondaryB" onclick="mp.trigger('startTruckerWork', 0);">Короткий маршрут</button>
+            <button class="startRoad secondaryB" onclick="mp.trigger('startTruckerWork', 1);">Средний маршрут</button>
+            <button class="startRoad secondaryB" onclick="mp.trigger('startTruckerWork', 2);">Дальний маршрут</button>
+            <button id="back" class="btn btn-secondary secondaryB">Назад</button>
+        </div>
+    </div>
+    <div id="center">
+        <h1>Хотите закончить работу?</h1>
+
+        <div id="buttonsOverDiv">
+            <button type="button" class="btn btn-dark secondB" id="finish"
+            onclick="mp.trigger('finishTruckerWork');">Закончить</button>
+        <button type="button" class="btn btn-dark secondB" id="continue" onclick="mp.trigger('continueTruckerWork');">Продолжить</button>
+        </div>
+
+        <i class="iBottom">Если захотите продолжить работу, у вас будет минута на возвращение в ТС</i>
+    </div>
+      <script>
+          $("#start, #back").click(function(){
+            $(".secondaryB").toggle();
+            $(".primaryB").toggle();
+            });
+      </script>
+    <script src="../index.js"></script>
+    </script>
+</body>
+</html>

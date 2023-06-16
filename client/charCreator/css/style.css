@@ -1,0 +1,228 @@
+html,
+body {
+    height: 100%;
+    background-color: transparent;
+    overflow: hidden;
+}
+
+h6 {
+    color: whitesmoke;
+}
+
+li {
+    height: 1rem;
+}
+
+.createChar {
+    text-align: left;
+}
+
+#charCreatorMain {
+    position: relative;
+    height: 100%;
+}
+
+.charInfo {
+    display: inline-block;
+    display: none;
+    position: absolute;
+    left: 1%;
+    top: 40%;
+    height: 25%;
+    width: 30%;
+}
+
+.charInfoInputs {
+    display: block;
+    margin-bottom: 1%;
+    width: 70%;
+}
+
+.chooseGender {
+    width: 3.5rem;
+    height: 3.5rem;
+    position: relative;
+    bottom: 1.75rem;
+    padding: 2% 4%;
+}
+
+.chooseGenderImg {
+    width: 100%;
+    height: 80%;
+}
+
+#generateButton {
+    width: 7rem;
+    height: 7rem;
+    padding: 2% 4%;
+}
+
+.generateImg {
+    width: 100%;
+    height: 70%;
+}
+
+.generationMaleFemale {
+    height: auto;
+    display: inline-block;
+    display: none;
+    position: absolute;
+    bottom: 2%;
+    left: 45%;
+    text-align: center;
+}
+
+.charList {
+    width: 20%;
+    height: 100%;
+    position: absolute;
+    right: 1%;
+    top: 10%;
+}
+
+.locationsButton {
+    display: inline-block;
+    width: 20%;
+}
+
+.charLastLocationSpawn {
+    width: 90%;
+    height: auto;
+}
+
+.homeImg,
+.lastLocationImg {
+    width: 100%;
+}
+
+.charMoney {
+    display: inline-block;
+}
+
+.charInfoContainer {
+    position: relative;
+    background-color: #6c757d;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+}
+
+.locationsList {
+    display: inline-block;
+    height: auto;
+    width: 100%;
+}
+
+.spawnPositions {
+    text-align: left;
+    font-size: 0.9rem;
+    padding: 0 0.75rem;
+    margin-top: 0 !important;
+    width: 100%;
+    height: 1.5rem;
+    border-radius: 0%;
+}
+
+.locationsLastColumn {
+    float: right;
+    width: 79%;
+    margin-left: 1%;
+    background-color: whitesmoke;
+}
+
+.right-panels {
+    margin-top: 1%;
+}
+
+.char1LastLocationColumn,
+.char2LastLocationColumn,
+.char3LastLocationColumn {
+    display: none;
+}
+
+
+/* .charInfoContainer{
+    display: none;
+} */
+
+.confirmCharCreation {
+    display: none;
+}
+
+.deleteB {
+    position: absolute;
+    right: 1%;
+    top: 0;
+    width: 20%;
+    height: auto;
+    background-color: transparent;
+    border: none;
+}
+
+.deleteB:hover {
+    background-color: transparent;
+}
+
+#deleteConfirm {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background-color: #423F3E;
+    display: block;
+    width: 80%;
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+    padding-top: 1.5%;
+    padding-bottom: 1%;
+    font-family: 'Andika', sans-serif;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.windowB {
+    background-color: #2B2B2B;
+    color: #EDEDED;
+    border-radius: 5px;
+    width: 30%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    border: none;
+    font-family: 'Andika', sans-serif;
+    font-size: medium;
+    text-decoration: none;
+    border: 0.25px solid rgba(0, 0, 0, 0.5);
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+}
+
+#deleteText {
+    margin-top: 0;
+    margin-bottom: 2%;
+    font-weight: bold;
+    font-size: 2rem;
+    padding-bottom: 0.5%;
+}
+
+.buttonsDiv {
+    margin-bottom: 1%;
+}
+
+#delete:hover {
+    background: #dc3545;
+}
+
+#cancel:hover {
+    background: #28a745;
+}
+
+#charInfoContainer1,
+#charInfoContainer2,
+#charInfoContainer3 {
+    display: none;
+}
+
+#deleteConfirm {
+    display: none;
+}

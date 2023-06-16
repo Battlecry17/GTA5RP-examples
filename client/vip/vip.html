@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/vip.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Andika&display=swap');
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div id="vipServices">
+        <h1>VIP услуги</h1>
+        <div>
+            <span>
+        <h2 class="balanceH2">Ваш баланс: </h2>
+        <h2 class="balanceH2" id="donateValue">1000</h2>
+      </span>
+
+            <form>
+                <label for="convert" id="firstLabel">Конвертация валюты</label>
+                <input type="number" id="convert" name="convert" placeholder="Введите количество.." onfocus="removeText(this.id);" oninput="calculateConvert(this.value);">
+                <label for="convertOutput" id="convertLabel"><i>10donate$ = 100$</i></label>
+                <button type="submit" onclick="mp.trigger('client:convertDonate', document.getElementById('convert').value);">Обменять</button>
+            </form>
+            <form>
+                <label for="fname">Смена имени: 200</label>
+                <input type="text" maxlength="12" id="fname" name="fname" placeholder="Новое имя.." onfocus="removeText(this.id);">
+                <button type="submit" onclick="mp.trigger('client:checkProceedDonateSpend', 'nameChange', document.getElementById('fname').value);">Сменить</button>
+            </form>
+            <form>
+                <label for="lname">Смена фамилии: 200</label>
+                <input type="text" maxlength="12" id="lname" name="lname" placeholder="Новая фамилия.." onfocus="removeText(this.id);">
+                <button type="submit" onclick="mp.trigger('client:checkProceedDonateSpend', 'surnameChange', document.getElementById('lname').value);">Сменить</button>
+            </form>
+            <form>
+                <label id="ageLabel" for="age">Смена возраста: 200</label>
+                <input type="number" max="99" id="age" name="age" placeholder="Новый возраст.." onfocus="removeText(this.id);">
+                <button type="submit" onclick="mp.trigger('client:checkProceedDonateSpend', 'ageChange', document.getElementById('age').value);">Сменить</button>
+            </form>
+            <h3 id="gunLicense">На владение оружием - 400</h3>
+            <button onclick="mp.trigger('client:checkProceedDonateSpend', 'licensePurchase', 0);">Приобрести</button>
+        </div>
+    </div>
+    <script src="vipB.js"></script>
+</body>
+
+</html>

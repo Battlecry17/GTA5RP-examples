@@ -1,0 +1,1328 @@
+[{
+        "type": "clothes",
+        "category": "Fhead",
+        "slot": "",
+        "name": "119",
+        "title": "Головной убор 119",
+        "description": "Головной убор 119",
+        "img": "./css/clothes/head/female/Prop_F_0_119.png",
+        "imgLarge": "./css/clothes/head/female/Prop_F_0_119.png",
+        "price": 50
+    }, {
+        "type": "clothes",
+        "category": "Fhead",
+        "slot": "",
+        "name": "131",
+        "title": "Головной убор 131",
+        "description": "Головной убор 131",
+        "img": "./css/clothes/head/female/Prop_F_0_131.png",
+        "imgLarge": "./css/clothes/head/female/Prop_F_0_131.png",
+        "price": 50
+    }, {
+        "type": "clothes",
+        "category": "Fhead",
+        "slot": "",
+        "name": "150",
+        "title": "Головной убор 150",
+        "description": "Головной убор 150",
+        "img": "./css/clothes/head/female/Prop_F_0_150.png",
+        "imgLarge": "./css/clothes/head/female/Prop_F_0_150.png",
+        "price": 50
+    }, {
+        "type": "clothes",
+        "category": "Fhead",
+        "slot": "",
+        "name": "20",
+        "title": "Головной убор 20",
+        "description": "Головной убор 20",
+        "img": "./css/clothes/head/female/Prop_F_0_20.png",
+        "imgLarge": "./css/clothes/head/female/Prop_F_0_20.png",
+        "price": 50
+    }, {
+        "type": "clothes",
+        "category": "Fhead",
+        "slot": "",
+        "name": "151",
+        "title": "Головной убор 151",
+        "description": "Головной убор 151",
+        "img": "./css/clothes/head/female/Prop_F_0_151.png",
+        "imgLarge": "./css/clothes/head/female/Prop_F_0_151.png",
+        "price": 50
+    }, {
+        "type": "clothes",
+        "category": "Fhead",
+        "slot": "",
+        "name": "28",
+        "title": "Головной убор 28",
+        "description": "Головной убор 28",
+        "img": "./css/clothes/head/female/Prop_F_0_28.png",
+        "imgLarge": "./css/clothes/head/female/Prop_F_0_28.png",
+        "price": 50
+    }, {
+        "type": "clothes",
+        "category": "Fhead",
+        "slot": "",
+        "name": "158",
+        "title": "Головной убор 158",
+        "description": "Головной убор 158",
+        "img": "./css/clothes/head/female/Prop_F_0_158.png",
+        "imgLarge": "./css/clothes/head/female/Prop_F_0_158.png",
+        "price": 50
+    }, {
+        "type": "clothes",
+        "category": "Fhead",
+        "slot": "",
+        "name": "54",
+        "title": "Головной убор 54",
+        "description": "Головной убор 54",
+        "img": "./css/clothes/head/female/Prop_F_0_54.png",
+        "imgLarge": "./css/clothes/head/female/Prop_F_0_54.png",
+        "price": 50
+    }, {
+        "type": "clothes",
+        "category": "Fhead",
+        "slot": "",
+        "name": "4",
+        "title": "Головной убор 4",
+        "description": "Головной убор 4",
+        "img": "./css/clothes/head/female/Prop_F_0_4.png",
+        "imgLarge": "./css/clothes/head/female/Prop_F_0_4.png",
+        "price": 50
+    }, {
+        "type": "clothes",
+        "category": "Fhead",
+        "slot": "",
+        "name": "22",
+        "title": "Головной убор 22",
+        "description": "Головной убор 22",
+        "img": "./css/clothes/head/female/Prop_F_0_22.png",
+        "imgLarge": "./css/clothes/head/female/Prop_F_0_22.png",
+        "price": 50
+    }, {
+        "type": "clothes",
+        "category": "Fhead",
+        "slot": "",
+        "name": "7",
+        "title": "Головной убор 7",
+        "description": "Головной убор 7",
+        "img": "./css/clothes/head/female/Prop_F_0_7.png",
+        "imgLarge": "./css/clothes/head/female/Prop_F_0_7.png",
+        "price": 50
+    },
+
+    {
+        "type": "clothes",
+        "category": "Mhead",
+        "slot": "",
+        "name": "12",
+        "title": "Головной убор 12",
+        "description": "Головной убор 12",
+        "img": "./css/clothes/head/male/Prop_M_0_12.png",
+        "imgLarge": "./css/clothes/head/male/Prop_M_0_12.png",
+        "price": 50
+    }, {
+        "type": "clothes",
+        "category": "Mhead",
+        "slot": "",
+        "name": "13",
+        "title": "Головной убор 13",
+        "description": "Головной убор 13",
+        "img": "./css/clothes/head/male/Prop_M_0_13.png",
+        "imgLarge": "./css/clothes/head/male/Prop_M_0_13.png",
+        "price": 50
+    }, {
+        "type": "clothes",
+        "category": "Mhead",
+        "slot": "",
+        "name": "146",
+        "title": "Головной убор 146",
+        "description": "Головной убор 146",
+        "img": "./css/clothes/head/male/Prop_M_0_146.png",
+        "imgLarge": "./css/clothes/head/male/Prop_M_0_146.png",
+        "price": 50
+    }, {
+        "type": "clothes",
+        "category": "Mhead",
+        "slot": "",
+        "name": "135",
+        "title": "Головной убор 135",
+        "description": "Головной убор 135",
+        "img": "./css/clothes/head/male/Prop_M_0_135.png",
+        "imgLarge": "./css/clothes/head/male/Prop_M_0_135.png",
+        "price": 50
+    }, {
+        "type": "clothes",
+        "category": "Mhead",
+        "slot": "",
+        "name": "159",
+        "title": "Головной убор 159",
+        "description": "Головной убор 159",
+        "img": "./css/clothes/head/male/Prop_M_0_159.png",
+        "imgLarge": "./css/clothes/head/male/Prop_M_0_159.png",
+        "price": 50
+    }, {
+        "type": "clothes",
+        "category": "Mhead",
+        "slot": "",
+        "name": "161",
+        "title": "Головной убор 161",
+        "description": "Головной убор 161",
+        "img": "./css/clothes/head/male/Prop_M_0_161.png",
+        "imgLarge": "./css/clothes/head/male/Prop_M_0_161.png",
+        "price": 50
+    }, {
+        "type": "clothes",
+        "category": "Mhead",
+        "slot": "",
+        "name": "30",
+        "title": "Головной убор 30",
+        "description": "Головной убор 30",
+        "img": "./css/clothes/head/male/Prop_M_0_30.png",
+        "imgLarge": "./css/clothes/head/male/Prop_M_0_30.png",
+        "price": 50
+    }, {
+        "type": "clothes",
+        "category": "Mhead",
+        "slot": "",
+        "name": "4",
+        "title": "Головной убор 4",
+        "description": "Головной убор 4",
+        "img": "./css/clothes/head/male/Prop_M_0_4.png",
+        "imgLarge": "./css/clothes/head/male/Prop_M_0_4.png",
+        "price": 50
+    }, {
+        "type": "clothes",
+        "category": "Mhead",
+        "slot": "",
+        "name": "5",
+        "title": "Головной убор 5",
+        "description": "Головной убор 5",
+        "img": "./css/clothes/head/male/Prop_M_0_5.png",
+        "imgLarge": "./css/clothes/head/male/Prop_M_0_5.png",
+        "price": 50
+    }, {
+        "type": "clothes",
+        "category": "Mhead",
+        "slot": "",
+        "name": "21",
+        "title": "Головной убор 21",
+        "description": "Головной убор 21",
+        "img": "./css/clothes/head/male/Prop_M_0_21.png",
+        "imgLarge": "./css/clothes/head/male/Prop_M_0_21.png",
+        "price": 50
+    },
+
+    {
+        "type": "clothes",
+        "category": "Flegs",
+        "slot": "",
+        "name": "1",
+        "title": "Ноги 1",
+        "description": "Ноги 1",
+        "img": "./css/clothes/legs/female/Clothing_F_4_1.png",
+        "imgLarge": "./css/clothes/legs/female/Clothing_F_4_1.png",
+        "price": 50
+    }, {
+        "type": "clothes",
+        "category": "Flegs",
+        "slot": "",
+        "name": "11",
+        "title": "Ноги 11",
+        "description": "Ноги 11",
+        "img": "./css/clothes/legs/female/Clothing_F_4_11.png",
+        "imgLarge": "./css/clothes/legs/female/Clothing_F_4_11.png",
+        "price": 50
+    }, {
+        "type": "clothes",
+        "category": "Flegs",
+        "slot": "",
+        "name": "111",
+        "title": "Ноги 111",
+        "description": "Ноги 111",
+        "img": "./css/clothes/legs/female/Clothing_F_4_111.png",
+        "imgLarge": "./css/clothes/legs/female/Clothing_F_4_111.png",
+        "price": 50
+    }, {
+        "type": "clothes",
+        "category": "Flegs",
+        "slot": "",
+        "name": "110",
+        "title": "Ноги 110",
+        "description": "Ноги 110",
+        "img": "./css/clothes/legs/female/Clothing_F_4_110.png",
+        "imgLarge": "./css/clothes/legs/female/Clothing_F_4_110.png",
+        "price": 50
+    }, {
+        "type": "clothes",
+        "category": "Flegs",
+        "slot": "",
+        "name": "2",
+        "title": "Ноги 2",
+        "description": "Ноги 2",
+        "img": "./css/clothes/legs/female/Clothing_F_4_2.png",
+        "imgLarge": "./css/clothes/legs/female/Clothing_F_4_2.png",
+        "price": 50
+    }, {
+        "type": "clothes",
+        "category": "Flegs",
+        "slot": "",
+        "name": "117",
+        "title": "Ноги 117",
+        "description": "Ноги 117",
+        "img": "./css/clothes/legs/female/Clothing_F_4_117.png",
+        "imgLarge": "./css/clothes/legs/female/Clothing_F_4_117.png",
+        "price": 50
+    }, {
+        "type": "clothes",
+        "category": "Flegs",
+        "slot": "",
+        "name": "118",
+        "title": "Ноги 118",
+        "description": "Ноги 118",
+        "img": "./css/clothes/legs/female/Clothing_F_4_118.png",
+        "imgLarge": "./css/clothes/legs/female/Clothing_F_4_118.png",
+        "price": 50
+    }, {
+        "type": "clothes",
+        "category": "Flegs",
+        "slot": "",
+        "name": "26",
+        "title": "Ноги 26",
+        "description": "Ноги 26",
+        "img": "./css/clothes/legs/female/Clothing_F_4_26.png",
+        "imgLarge": "./css/clothes/legs/female/Clothing_F_4_26.png",
+        "price": 50
+    }, {
+        "type": "clothes",
+        "category": "Flegs",
+        "slot": "",
+        "name": "24",
+        "title": "Ноги 24",
+        "description": "Ноги 24",
+        "img": "./css/clothes/legs/female/Clothing_F_4_24.png",
+        "imgLarge": "./css/clothes/legs/female/Clothing_F_4_24.png",
+        "price": 50
+    }, {
+        "type": "clothes",
+        "category": "Flegs",
+        "slot": "",
+        "name": "28",
+        "title": "Ноги 28",
+        "description": "Ноги 28",
+        "img": "./css/clothes/legs/female/Clothing_F_4_28.png",
+        "imgLarge": "./css/clothes/legs/female/Clothing_F_4_28.png",
+        "price": 50
+    }, {
+        "type": "clothes",
+        "category": "Flegs",
+        "slot": "",
+        "name": "50",
+        "title": "Ноги 50",
+        "description": "Ноги 50",
+        "img": "./css/clothes/legs/female/Clothing_F_4_50.png",
+        "imgLarge": "./css/clothes/legs/female/Clothing_F_4_50.png",
+        "price": 50
+    }, {
+        "type": "clothes",
+        "category": "Flegs",
+        "slot": "",
+        "name": "51",
+        "title": "Ноги 51",
+        "description": "Ноги 51",
+        "img": "./css/clothes/legs/female/Clothing_F_4_51.png",
+        "imgLarge": "./css/clothes/legs/female/Clothing_F_4_51.png",
+        "price": 50
+    }, {
+        "type": "clothes",
+        "category": "Flegs",
+        "slot": "",
+        "name": "36",
+        "title": "Ноги 36",
+        "description": "Ноги 36",
+        "img": "./css/clothes/legs/female/Clothing_F_4_36.png",
+        "imgLarge": "./css/clothes/legs/female/Clothing_F_4_36.png",
+        "price": 50
+    }, {
+        "type": "clothes",
+        "category": "Flegs",
+        "slot": "",
+        "name": "55",
+        "title": "Ноги 55",
+        "description": "Ноги 55",
+        "img": "./css/clothes/legs/female/Clothing_F_4_55.png",
+        "imgLarge": "./css/clothes/legs/female/Clothing_F_4_55.png",
+        "price": 50
+    }, {
+        "type": "clothes",
+        "category": "Flegs",
+        "slot": "",
+        "name": "34",
+        "title": "Ноги 34",
+        "description": "Ноги 34",
+        "img": "./css/clothes/legs/female/Clothing_F_4_34.png",
+        "imgLarge": "./css/clothes/legs/female/Clothing_F_4_34.png",
+        "price": 50
+    }, {
+        "type": "clothes",
+        "category": "Flegs",
+        "slot": "",
+        "name": "60",
+        "title": "Ноги 60",
+        "description": "Ноги 60",
+        "img": "./css/clothes/legs/female/Clothing_F_4_60.png",
+        "imgLarge": "./css/clothes/legs/female/Clothing_F_4_60.png",
+        "price": 50
+    }, {
+        "type": "clothes",
+        "category": "Flegs",
+        "slot": "",
+        "name": "52",
+        "title": "Ноги 52",
+        "description": "Ноги 52",
+        "img": "./css/clothes/legs/female/Clothing_F_4_52.png",
+        "imgLarge": "./css/clothes/legs/female/Clothing_F_4_52.png",
+        "price": 50
+    }, {
+        "type": "clothes",
+        "category": "Flegs",
+        "slot": "",
+        "name": "80",
+        "title": "Ноги 80",
+        "description": "Ноги 80",
+        "img": "./css/clothes/legs/female/Clothing_F_4_80.png",
+        "imgLarge": "./css/clothes/legs/female/Clothing_F_4_80.png",
+        "price": 50
+    }, {
+        "type": "clothes",
+        "category": "Flegs",
+        "slot": "",
+        "name": "71",
+        "title": "Ноги 71",
+        "description": "Ноги 71",
+        "img": "./css/clothes/legs/female/Clothing_F_4_71.png",
+        "imgLarge": "./css/clothes/legs/female/Clothing_F_4_71.png",
+        "price": 50
+    }, {
+        "type": "clothes",
+        "category": "Flegs",
+        "slot": "",
+        "name": "81",
+        "title": "Ноги 81",
+        "description": "Ноги 81",
+        "img": "./css/clothes/legs/female/Clothing_F_4_81.png",
+        "imgLarge": "./css/clothes/legs/female/Clothing_F_4_81.png",
+        "price": 50
+    },
+
+    {
+        "type": "clothes",
+        "category": "Mlegs",
+        "slot": "",
+        "name": "1",
+        "title": "Ноги 1",
+        "description": "Ноги 1",
+        "img": "./css/clothes/legs/male/Clothing_M_4_1.png",
+        "imgLarge": "./css/clothes/legs/male/Clothing_M_4_1.png",
+        "price": 50
+    }, {
+        "type": "clothes",
+        "category": "Mlegs",
+        "slot": "",
+        "name": "101",
+        "title": "Ноги 101",
+        "description": "Ноги 101",
+        "img": "./css/clothes/legs/male/Clothing_M_4_101.png",
+        "imgLarge": "./css/clothes/legs/male/Clothing_M_4_101.png",
+        "price": 50
+    }, {
+        "type": "clothes",
+        "category": "Mlegs",
+        "slot": "",
+        "name": "117",
+        "title": "Ноги 117",
+        "description": "Ноги 117",
+        "img": "./css/clothes/legs/male/Clothing_M_4_117.png",
+        "imgLarge": "./css/clothes/legs/male/Clothing_M_4_117.png",
+        "price": 50
+    }, {
+        "type": "clothes",
+        "category": "Mlegs",
+        "slot": "",
+        "name": "19",
+        "title": "Ноги 19",
+        "description": "Ноги 19",
+        "img": "./css/clothes/legs/male/Clothing_M_4_19.png",
+        "imgLarge": "./css/clothes/legs/male/Clothing_M_4_19.png",
+        "price": 50
+    }, {
+        "type": "clothes",
+        "category": "Mlegs",
+        "slot": "",
+        "name": "38",
+        "title": "Ноги 38",
+        "description": "Ноги 38",
+        "img": "./css/clothes/legs/male/Clothing_M_4_38.png",
+        "imgLarge": "./css/clothes/legs/male/Clothing_M_4_38.png",
+        "price": 50
+    }, {
+        "type": "clothes",
+        "category": "Mlegs",
+        "slot": "",
+        "name": "36",
+        "title": "Ноги 36",
+        "description": "Ноги 36",
+        "img": "./css/clothes/legs/male/Clothing_M_4_36.png",
+        "imgLarge": "./css/clothes/legs/male/Clothing_M_4_36.png",
+        "price": 50
+    }, {
+        "type": "clothes",
+        "category": "Mlegs",
+        "slot": "",
+        "name": "3",
+        "title": "Ноги 3",
+        "description": "Ноги 3",
+        "img": "./css/clothes/legs/male/Clothing_M_4_3.png",
+        "imgLarge": "./css/clothes/legs/male/Clothing_M_4_3.png",
+        "price": 50
+    }, {
+        "type": "clothes",
+        "category": "Mlegs",
+        "slot": "",
+        "name": "39",
+        "title": "Ноги 39",
+        "description": "Ноги 39",
+        "img": "./css/clothes/legs/male/Clothing_M_4_39.png",
+        "imgLarge": "./css/clothes/legs/male/Clothing_M_4_39.png",
+        "price": 50
+    }, {
+        "type": "clothes",
+        "category": "Mlegs",
+        "slot": "",
+        "name": "40",
+        "title": "Ноги 40",
+        "description": "Ноги 40",
+        "img": "./css/clothes/legs/male/Clothing_M_4_40.png",
+        "imgLarge": "./css/clothes/legs/male/Clothing_M_4_40.png",
+        "price": 50
+    }, {
+        "type": "clothes",
+        "category": "Mlegs",
+        "slot": "",
+        "name": "46",
+        "title": "Ноги 46",
+        "description": "Ноги 46",
+        "img": "./css/clothes/legs/male/Clothing_M_4_46.png",
+        "imgLarge": "./css/clothes/legs/male/Clothing_M_4_46.png",
+        "price": 50
+    }, {
+        "type": "clothes",
+        "category": "Mlegs",
+        "slot": "",
+        "name": "4",
+        "title": "Ноги 4",
+        "description": "Ноги 4",
+        "img": "./css/clothes/legs/male/Clothing_M_4_4.png",
+        "imgLarge": "./css/clothes/legs/male/Clothing_M_4_4.png",
+        "price": 50
+    }, {
+        "type": "clothes",
+        "category": "Mlegs",
+        "slot": "",
+        "name": "47",
+        "title": "Ноги 47",
+        "description": "Ноги 47",
+        "img": "./css/clothes/legs/male/Clothing_M_4_47.png",
+        "imgLarge": "./css/clothes/legs/male/Clothing_M_4_47.png",
+        "price": 50
+    }, {
+        "type": "clothes",
+        "category": "Mlegs",
+        "slot": "",
+        "name": "49",
+        "title": "Ноги 49",
+        "description": "Ноги 49",
+        "img": "./css/clothes/legs/male/Clothing_M_4_49.png",
+        "imgLarge": "./css/clothes/legs/male/Clothing_M_4_49.png",
+        "price": 50
+    }, {
+        "type": "clothes",
+        "category": "Mlegs",
+        "slot": "",
+        "name": "54",
+        "title": "Ноги 54",
+        "description": "Ноги 54",
+        "img": "./css/clothes/legs/male/Clothing_M_4_54.png",
+        "imgLarge": "./css/clothes/legs/male/Clothing_M_4_54.png",
+        "price": 50
+    }, {
+        "type": "clothes",
+        "category": "Mlegs",
+        "slot": "",
+        "name": "5",
+        "title": "Ноги 5",
+        "description": "Ноги 5",
+        "img": "./css/clothes/legs/male/Clothing_M_4_5.png",
+        "imgLarge": "./css/clothes/legs/male/Clothing_M_4_5.png",
+        "price": 50
+    }, {
+        "type": "clothes",
+        "category": "Mlegs",
+        "slot": "",
+        "name": "48",
+        "title": "Ноги 48",
+        "description": "Ноги 48",
+        "img": "./css/clothes/legs/male/Clothing_M_4_48.png",
+        "imgLarge": "./css/clothes/legs/male/Clothing_M_4_48.png",
+        "price": 50
+    }, {
+        "type": "clothes",
+        "category": "Mlegs",
+        "slot": "",
+        "name": "80",
+        "title": "Ноги 80",
+        "description": "Ноги 80",
+        "img": "./css/clothes/legs/male/Clothing_M_4_80.png",
+        "imgLarge": "./css/clothes/legs/male/Clothing_M_4_80.png",
+        "price": 50
+    }, {
+        "type": "clothes",
+        "category": "Mlegs",
+        "slot": "",
+        "name": "57",
+        "title": "Ноги 57",
+        "description": "Ноги 57",
+        "img": "./css/clothes/legs/male/Clothing_M_4_57.png",
+        "imgLarge": "./css/clothes/legs/male/Clothing_M_4_57.png",
+        "price": 50
+    }, {
+        "type": "clothes",
+        "category": "Mlegs",
+        "slot": "",
+        "name": "63",
+        "title": "Ноги 63",
+        "description": "Ноги 63",
+        "img": "./css/clothes/legs/male/Clothing_M_4_63.png",
+        "imgLarge": "./css/clothes/legs/male/Clothing_M_4_63.png",
+        "price": 50
+    }, {
+        "type": "clothes",
+        "category": "Mlegs",
+        "slot": "",
+        "name": "81",
+        "title": "Ноги 81",
+        "description": "Ноги 81",
+        "img": "./css/clothes/legs/male/Clothing_M_4_81.png",
+        "imgLarge": "./css/clothes/legs/male/Clothing_M_4_81.png",
+        "price": 50
+    },
+
+    {
+        "type": "clothes",
+        "category": "masks",
+        "slot": "",
+        "name": "16",
+        "title": "Маски 16",
+        "description": "Маски 16",
+        "img": "./css/clothes/masks/Clothing_1_16.png",
+        "imgLarge": "./css/clothes/masks/Clothing_1_16.png",
+        "price": 50
+    }, {
+        "type": "clothes",
+        "category": "masks",
+        "slot": "",
+        "name": "2",
+        "title": "Маски 2",
+        "description": "Маски 2",
+        "img": "./css/clothes/masks/Clothing_1_2.png",
+        "imgLarge": "./css/clothes/masks/Clothing_1_2.png",
+        "price": 50
+    }, {
+        "type": "clothes",
+        "category": "masks",
+        "slot": "",
+        "name": "3",
+        "title": "Маски 3",
+        "description": "Маски 3",
+        "img": "./css/clothes/masks/Clothing_1_3.png",
+        "imgLarge": "./css/clothes/masks/Clothing_1_3.png",
+        "price": 50
+    }, {
+        "type": "clothes",
+        "category": "masks",
+        "slot": "",
+        "name": "39",
+        "title": "Маски 39",
+        "description": "Маски 39",
+        "img": "./css/clothes/masks/Clothing_1_39.png",
+        "imgLarge": "./css/clothes/masks/Clothing_1_39.png",
+        "price": 50
+    }, {
+        "type": "clothes",
+        "category": "masks",
+        "slot": "",
+        "name": "4",
+        "title": "Маски 4",
+        "description": "Маски 4",
+        "img": "./css/clothes/masks/Clothing_1_4.png",
+        "imgLarge": "./css/clothes/masks/Clothing_1_4.png",
+        "price": 50
+    }, {
+        "type": "clothes",
+        "category": "masks",
+        "slot": "",
+        "name": "51",
+        "title": "Маски 51",
+        "description": "Маски 51",
+        "img": "./css/clothes/masks/Clothing_1_51.png",
+        "imgLarge": "./css/clothes/masks/Clothing_1_51.png",
+        "price": 50
+    }, {
+        "type": "clothes",
+        "category": "masks",
+        "slot": "",
+        "name": "32",
+        "title": "Маски 32",
+        "description": "Маски 32",
+        "img": "./css/clothes/masks/Clothing_1_32.png",
+        "imgLarge": "./css/clothes/masks/Clothing_1_32.png",
+        "price": 50
+    }, {
+        "type": "clothes",
+        "category": "masks",
+        "slot": "",
+        "name": "70",
+        "title": "Маски 70",
+        "description": "Маски 70",
+        "img": "./css/clothes/masks/Clothing_1_70.png",
+        "imgLarge": "./css/clothes/masks/Clothing_1_70.png",
+        "price": 50
+    }, {
+        "type": "clothes",
+        "category": "masks",
+        "slot": "",
+        "name": "6",
+        "title": "Маски 6",
+        "description": "Маски 6",
+        "img": "./css/clothes/masks/Clothing_1_6.png",
+        "imgLarge": "./css/clothes/masks/Clothing_1_6.png",
+        "price": 50
+    }, {
+        "type": "clothes",
+        "category": "masks",
+        "slot": "",
+        "name": "95",
+        "title": "Маски 95",
+        "description": "Маски 95",
+        "img": "./css/clothes/masks/Clothing_1_95.png",
+        "imgLarge": "./css/clothes/masks/Clothing_1_95.png",
+        "price": 50
+    },
+
+    {
+        "type": "clothes",
+        "category": "Fshoes",
+        "slot": "",
+        "name": "15",
+        "title": "Обувь 15",
+        "description": "Обувь 15",
+        "img": "./css/clothes/shoes/female/Clothing_F_6_15.png",
+        "imgLarge": "./css/clothes/shoes/female/Clothing_F_6_15.png",
+        "price": 50
+    }, {
+        "type": "clothes",
+        "category": "Fshoes",
+        "slot": "",
+        "name": "14",
+        "title": "Обувь 14",
+        "description": "Обувь 14",
+        "img": "./css/clothes/shoes/female/Clothing_F_6_14.png",
+        "imgLarge": "./css/clothes/shoes/female/Clothing_F_6_14.png",
+        "price": 50
+    }, {
+        "type": "clothes",
+        "category": "Fshoes",
+        "slot": "",
+        "name": "20",
+        "title": "Обувь 20",
+        "description": "Обувь 20",
+        "img": "./css/clothes/shoes/female/Clothing_F_6_20.png",
+        "imgLarge": "./css/clothes/shoes/female/Clothing_F_6_20.png",
+        "price": 50
+    }, {
+        "type": "clothes",
+        "category": "Fshoes",
+        "slot": "",
+        "name": "30",
+        "title": "Обувь 30",
+        "description": "Обувь 30",
+        "img": "./css/clothes/shoes/female/Clothing_F_6_30.png",
+        "imgLarge": "./css/clothes/shoes/female/Clothing_F_6_30.png",
+        "price": 50
+    }, {
+        "type": "clothes",
+        "category": "Fshoes",
+        "slot": "",
+        "name": "3",
+        "title": "Обувь 3",
+        "description": "Обувь 3",
+        "img": "./css/clothes/shoes/female/Clothing_F_6_3.png",
+        "imgLarge": "./css/clothes/shoes/female/Clothing_F_6_3.png",
+        "price": 50
+    }, {
+        "type": "clothes",
+        "category": "Fshoes",
+        "slot": "",
+        "name": "49",
+        "title": "Обувь 49",
+        "description": "Обувь 49",
+        "img": "./css/clothes/shoes/female/Clothing_F_6_49.png",
+        "imgLarge": "./css/clothes/shoes/female/Clothing_F_6_49.png",
+        "price": 50
+    }, {
+        "type": "clothes",
+        "category": "Fshoes",
+        "slot": "",
+        "name": "89",
+        "title": "Обувь 89",
+        "description": "Обувь 89",
+        "img": "./css/clothes/shoes/female/Clothing_F_6_89.png",
+        "imgLarge": "./css/clothes/shoes/female/Clothing_F_6_89.png",
+        "price": 50
+    }, {
+        "type": "clothes",
+        "category": "Fshoes",
+        "slot": "",
+        "name": "92",
+        "title": "Обувь 92",
+        "description": "Обувь 92",
+        "img": "./css/clothes/shoes/female/Clothing_F_6_92.png",
+        "imgLarge": "./css/clothes/shoes/female/Clothing_F_6_92.png",
+        "price": 50
+    }, {
+        "type": "clothes",
+        "category": "Fshoes",
+        "slot": "",
+        "name": "4",
+        "title": "Обувь 4",
+        "description": "Обувь 4",
+        "img": "./css/clothes/shoes/female/Clothing_F_6_4.png",
+        "imgLarge": "./css/clothes/shoes/female/Clothing_F_6_4.png",
+        "price": 50
+    }, {
+        "type": "clothes",
+        "category": "Fshoes",
+        "slot": "",
+        "name": "5",
+        "title": "Обувь 5",
+        "description": "Обувь 5",
+        "img": "./css/clothes/shoes/female/Clothing_F_6_5.png",
+        "imgLarge": "./css/clothes/shoes/female/Clothing_F_6_5.png",
+        "price": 50
+    },
+
+    {
+        "type": "clothes",
+        "category": "Mshoes",
+        "slot": "",
+        "name": "1",
+        "title": "Обувь 1",
+        "description": "Обувь 1",
+        "img": "./css/clothes/shoes/male/Clothing_M_6_1.png",
+        "imgLarge": "./css/clothes/shoes/male/Clothing_M_6_1.png",
+        "price": 50
+    }, {
+        "type": "clothes",
+        "category": "Mshoes",
+        "slot": "",
+        "name": "10",
+        "title": "Обувь 10",
+        "description": "Обувь 10",
+        "img": "./css/clothes/shoes/male/Clothing_M_6_10.png",
+        "imgLarge": "./css/clothes/shoes/male/Clothing_M_6_10.png",
+        "price": 50
+    }, {
+        "type": "clothes",
+        "category": "Mshoes",
+        "slot": "",
+        "name": "4",
+        "title": "Обувь 4",
+        "description": "Обувь 4",
+        "img": "./css/clothes/shoes/male/Clothing_M_6_4.png",
+        "imgLarge": "./css/clothes/shoes/male/Clothing_M_6_4.png",
+        "price": 50
+    }, {
+        "type": "clothes",
+        "category": "Mshoes",
+        "slot": "",
+        "name": "25",
+        "title": "Обувь 25",
+        "description": "Обувь 25",
+        "img": "./css/clothes/shoes/male/Clothing_M_6_25.png",
+        "imgLarge": "./css/clothes/shoes/male/Clothing_M_6_25.png",
+        "price": 50
+    }, {
+        "type": "clothes",
+        "category": "Mshoes",
+        "slot": "",
+        "name": "78",
+        "title": "Обувь 78",
+        "description": "Обувь 78",
+        "img": "./css/clothes/shoes/male/Clothing_M_6_78.png",
+        "imgLarge": "./css/clothes/shoes/male/Clothing_M_6_78.png",
+        "price": 50
+    }, {
+        "type": "clothes",
+        "category": "Mshoes",
+        "slot": "",
+        "name": "9",
+        "title": "Обувь 9",
+        "description": "Обувь 9",
+        "img": "./css/clothes/shoes/male/Clothing_M_6_9.png",
+        "imgLarge": "./css/clothes/shoes/male/Clothing_M_6_9.png",
+        "price": 50
+    }, {
+        "type": "clothes",
+        "category": "Mshoes",
+        "slot": "",
+        "name": "42",
+        "title": "Обувь 42",
+        "description": "Обувь 42",
+        "img": "./css/clothes/shoes/male/Clothing_M_6_42.png",
+        "imgLarge": "./css/clothes/shoes/male/Clothing_M_6_42.png",
+        "price": 50
+    }, {
+        "type": "clothes",
+        "category": "Mshoes",
+        "slot": "",
+        "name": "5",
+        "title": "Обувь 5",
+        "description": "Обувь 5",
+        "img": "./css/clothes/shoes/male/Clothing_M_6_5.png",
+        "imgLarge": "./css/clothes/shoes/male/Clothing_M_6_5.png",
+        "price": 50
+    }, {
+        "type": "clothes",
+        "category": "Mshoes",
+        "slot": "",
+        "name": "99",
+        "title": "Обувь 99",
+        "description": "Обувь 99",
+        "img": "./css/clothes/shoes/male/Clothing_M_6_99.png",
+        "imgLarge": "./css/clothes/shoes/male/Clothing_M_6_99.png",
+        "price": 50
+    }, {
+        "type": "clothes",
+        "category": "Mshoes",
+        "slot": "",
+        "name": "93",
+        "title": "Обувь 93",
+        "description": "Обувь 93",
+        "img": "./css/clothes/shoes/male/Clothing_M_6_93.png",
+        "imgLarge": "./css/clothes/shoes/male/Clothing_M_6_93.png",
+        "price": 50
+    },
+
+    {
+        "type": "clothes",
+        "category": "Ftorso",
+        "slot": "",
+        "name": "16",
+        "title": "Верх 16",
+        "description": "Верх 16",
+        "img": "./css/clothes/torso/female/Clothing_F_11_16.png",
+        "imgLarge": "./css/clothes/torso/female/Clothing_F_11_16.png",
+        "price": 50
+    }, {
+        "type": "clothes",
+        "category": "Ftorso",
+        "slot": "",
+        "name": "198",
+        "title": "Верх 198",
+        "description": "Верх 198",
+        "img": "./css/clothes/torso/female/Clothing_F_11_198.png",
+        "imgLarge": "./css/clothes/torso/female/Clothing_F_11_198.png",
+        "price": 50
+    }, {
+        "type": "clothes",
+        "category": "Ftorso",
+        "slot": "",
+        "name": "249",
+        "title": "Верх 249",
+        "description": "Верх 249",
+        "img": "./css/clothes/torso/female/Clothing_F_11_249.png",
+        "imgLarge": "./css/clothes/torso/female/Clothing_F_11_249.png",
+        "price": 50
+    }, {
+        "type": "clothes",
+        "category": "Ftorso",
+        "slot": "",
+        "name": "3",
+        "title": "Верх 3",
+        "description": "Верх 3",
+        "img": "./css/clothes/torso/female/Clothing_F_11_3.png",
+        "imgLarge": "./css/clothes/torso/female/Clothing_F_11_3.png",
+        "price": 50
+    }, {
+        "type": "clothes",
+        "category": "Ftorso",
+        "slot": "",
+        "name": "227",
+        "title": "Верх 227",
+        "description": "Верх 227",
+        "img": "./css/clothes/torso/female/Clothing_F_11_227.png",
+        "imgLarge": "./css/clothes/torso/female/Clothing_F_11_227.png",
+        "price": 50
+    }, {
+        "type": "clothes",
+        "category": "Ftorso",
+        "slot": "",
+        "name": "334",
+        "title": "Верх 334",
+        "description": "Верх 334",
+        "img": "./css/clothes/torso/female/Clothing_F_11_334.png",
+        "imgLarge": "./css/clothes/torso/female/Clothing_F_11_334.png",
+        "price": 50
+    }, {
+        "type": "clothes",
+        "category": "Ftorso",
+        "slot": "",
+        "name": "27",
+        "title": "Верх 27",
+        "description": "Верх 27",
+        "img": "./css/clothes/torso/female/Clothing_F_11_27.png",
+        "imgLarge": "./css/clothes/torso/female/Clothing_F_11_27.png",
+        "price": 50
+    }, {
+        "type": "clothes",
+        "category": "Ftorso",
+        "slot": "",
+        "name": "337",
+        "title": "Верх 337",
+        "description": "Верх 337",
+        "img": "./css/clothes/torso/female/Clothing_F_11_337.png",
+        "imgLarge": "./css/clothes/torso/female/Clothing_F_11_337.png",
+        "price": 50
+    }, {
+        "type": "clothes",
+        "category": "Ftorso",
+        "slot": "",
+        "name": "341",
+        "title": "Верх 341",
+        "description": "Верх 341",
+        "img": "./css/clothes/torso/female/Clothing_F_11_341.png",
+        "imgLarge": "./css/clothes/torso/female/Clothing_F_11_341.png",
+        "price": 50
+    }, {
+        "type": "clothes",
+        "category": "Ftorso",
+        "slot": "",
+        "name": "32",
+        "title": "Верх 32",
+        "description": "Верх 32",
+        "img": "./css/clothes/torso/female/Clothing_F_11_32.png",
+        "imgLarge": "./css/clothes/torso/female/Clothing_F_11_32.png",
+        "price": 50
+    }, {
+        "type": "clothes",
+        "category": "Ftorso",
+        "slot": "",
+        "name": "354",
+        "title": "Верх 354",
+        "description": "Верх 354",
+        "img": "./css/clothes/torso/female/Clothing_F_11_354.png",
+        "imgLarge": "./css/clothes/torso/female/Clothing_F_11_354.png",
+        "price": 50
+    }, {
+        "type": "clothes",
+        "category": "Ftorso",
+        "slot": "",
+        "name": "379",
+        "title": "Верх 379",
+        "description": "Верх 379",
+        "img": "./css/clothes/torso/female/Clothing_F_11_379.png",
+        "imgLarge": "./css/clothes/torso/female/Clothing_F_11_379.png",
+        "price": 50
+    }, {
+        "type": "clothes",
+        "category": "Ftorso",
+        "slot": "",
+        "name": "373",
+        "title": "Верх 373",
+        "description": "Верх 373",
+        "img": "./css/clothes/torso/female/Clothing_F_11_373.png",
+        "imgLarge": "./css/clothes/torso/female/Clothing_F_11_373.png",
+        "price": 50
+    }, {
+        "type": "clothes",
+        "category": "Ftorso",
+        "slot": "",
+        "name": "392",
+        "title": "Верх 392",
+        "description": "Верх 392",
+        "img": "./css/clothes/torso/female/Clothing_F_11_392.png",
+        "imgLarge": "./css/clothes/torso/female/Clothing_F_11_392.png",
+        "price": 50
+    }, {
+        "type": "clothes",
+        "category": "Ftorso",
+        "slot": "",
+        "name": "402",
+        "title": "Верх 402",
+        "description": "Верх 402",
+        "img": "./css/clothes/torso/female/Clothing_F_11_402.png",
+        "imgLarge": "./css/clothes/torso/female/Clothing_F_11_402.png",
+        "price": 50
+    }, {
+        "type": "clothes",
+        "category": "Ftorso",
+        "slot": "",
+        "name": "401",
+        "title": "Верх 401",
+        "description": "Верх 401",
+        "img": "./css/clothes/torso/female/Clothing_F_11_401.png",
+        "imgLarge": "./css/clothes/torso/female/Clothing_F_11_401.png",
+        "price": 50
+    }, {
+        "type": "clothes",
+        "category": "Ftorso",
+        "slot": "",
+        "name": "411",
+        "title": "Верх 411",
+        "description": "Верх 411",
+        "img": "./css/clothes/torso/female/Clothing_F_11_411.png",
+        "imgLarge": "./css/clothes/torso/female/Clothing_F_11_411.png",
+        "price": 50
+    }, {
+        "type": "clothes",
+        "category": "Ftorso",
+        "slot": "",
+        "name": "407",
+        "title": "Верх 407",
+        "description": "Верх 407",
+        "img": "./css/clothes/torso/female/Clothing_F_11_407.png",
+        "imgLarge": "./css/clothes/torso/female/Clothing_F_11_407.png",
+        "price": 50
+    }, {
+        "type": "clothes",
+        "category": "Ftorso",
+        "slot": "",
+        "name": "54",
+        "title": "Верх 54",
+        "description": "Верх 54",
+        "img": "./css/clothes/torso/female/Clothing_F_11_54.png",
+        "imgLarge": "./css/clothes/torso/female/Clothing_F_11_54.png",
+        "price": 50
+    }, {
+        "type": "clothes",
+        "category": "Ftorso",
+        "slot": "",
+        "name": "9",
+        "title": "Верх 9",
+        "description": "Верх 9",
+        "img": "./css/clothes/torso/female/Clothing_F_11_9.png",
+        "imgLarge": "./css/clothes/torso/female/Clothing_F_11_9.png",
+        "price": 50
+    },
+
+    {
+        "type": "clothes",
+        "category": "Mtorso",
+        "slot": "",
+        "name": "113",
+        "title": "Верх 113",
+        "description": "Верх 113",
+        "img": "./css/clothes/torso/male/Clothing_M_11_113.png",
+        "imgLarge": "./css/clothes/torso/male/Clothing_M_11_113.png",
+        "price": 50
+    }, {
+        "type": "clothes",
+        "category": "Mtorso",
+        "slot": "",
+        "name": "115",
+        "title": "Верх 115",
+        "description": "Верх 115",
+        "img": "./css/clothes/torso/male/Clothing_M_11_115.png",
+        "imgLarge": "./css/clothes/torso/male/Clothing_M_11_115.png",
+        "price": 50
+    }, {
+        "type": "clothes",
+        "category": "Mtorso",
+        "slot": "",
+        "name": "24",
+        "title": "Верх 24",
+        "description": "Верх 24",
+        "img": "./css/clothes/torso/male/Clothing_M_11_24.png",
+        "imgLarge": "./css/clothes/torso/male/Clothing_M_11_24.png",
+        "price": 50
+    }, {
+        "type": "clothes",
+        "category": "Mtorso",
+        "slot": "",
+        "name": "249",
+        "title": "Верх 249",
+        "description": "Верх 249",
+        "img": "./css/clothes/torso/male/Clothing_M_11_249.png",
+        "imgLarge": "./css/clothes/torso/male/Clothing_M_11_249.png",
+        "price": 50
+    }, {
+        "type": "clothes",
+        "category": "Mtorso",
+        "slot": "",
+        "name": "26",
+        "title": "Верх 26",
+        "description": "Верх 26",
+        "img": "./css/clothes/torso/male/Clothing_M_11_26.png",
+        "imgLarge": "./css/clothes/torso/male/Clothing_M_11_26.png",
+        "price": 50
+    }, {
+        "type": "clothes",
+        "category": "Mtorso",
+        "slot": "",
+        "name": "262",
+        "title": "Верх 262",
+        "description": "Верх 262",
+        "img": "./css/clothes/torso/male/Clothing_M_11_262.png",
+        "imgLarge": "./css/clothes/torso/male/Clothing_M_11_262.png",
+        "price": 50
+    }, {
+        "type": "clothes",
+        "category": "Mtorso",
+        "slot": "",
+        "name": "14",
+        "title": "Верх 14",
+        "description": "Верх 14",
+        "img": "./css/clothes/torso/male/Clothing_M_11_14.png",
+        "imgLarge": "./css/clothes/torso/male/Clothing_M_11_14.png",
+        "price": 50
+    }, {
+        "type": "clothes",
+        "category": "Mtorso",
+        "slot": "",
+        "name": "264",
+        "title": "Верх 264",
+        "description": "Верх 264",
+        "img": "./css/clothes/torso/male/Clothing_M_11_264.png",
+        "imgLarge": "./css/clothes/torso/male/Clothing_M_11_264.png",
+        "price": 50
+    }, {
+        "type": "clothes",
+        "category": "Mtorso",
+        "slot": "",
+        "name": "266",
+        "title": "Верх 266",
+        "description": "Верх 266",
+        "img": "./css/clothes/torso/male/Clothing_M_11_266.png",
+        "imgLarge": "./css/clothes/torso/male/Clothing_M_11_266.png",
+        "price": 50
+    }, {
+        "type": "clothes",
+        "category": "Mtorso",
+        "slot": "",
+        "name": "3",
+        "title": "Верх 3",
+        "description": "Верх 3",
+        "img": "./css/clothes/torso/male/Clothing_M_11_3.png",
+        "imgLarge": "./css/clothes/torso/male/Clothing_M_11_3.png",
+        "price": 50
+    }, {
+        "type": "clothes",
+        "category": "Mtorso",
+        "slot": "",
+        "name": "269",
+        "title": "Верх 269",
+        "description": "Верх 269",
+        "img": "./css/clothes/torso/male/Clothing_M_11_269.png",
+        "imgLarge": "./css/clothes/torso/male/Clothing_M_11_269.png",
+        "price": 50
+    }, {
+        "type": "clothes",
+        "category": "Mtorso",
+        "slot": "",
+        "name": "33",
+        "title": "Верх 33",
+        "description": "Верх 33",
+        "img": "./css/clothes/torso/male/Clothing_M_11_33.png",
+        "imgLarge": "./css/clothes/torso/male/Clothing_M_11_33.png",
+        "price": 50
+    }, {
+        "type": "clothes",
+        "category": "Mtorso",
+        "slot": "",
+        "name": "355",
+        "title": "Верх 355",
+        "description": "Верх 355",
+        "img": "./css/clothes/torso/male/Clothing_M_11_355.png",
+        "imgLarge": "./css/clothes/torso/male/Clothing_M_11_355.png",
+        "price": 50
+    }, {
+        "type": "clothes",
+        "category": "Mtorso",
+        "slot": "",
+        "name": "381",
+        "title": "Верх 381",
+        "description": "Верх 381",
+        "img": "./css/clothes/torso/male/Clothing_M_11_381.png",
+        "imgLarge": "./css/clothes/torso/male/Clothing_M_11_381.png",
+        "price": 50
+    }, {
+        "type": "clothes",
+        "category": "Mtorso",
+        "slot": "",
+        "name": "359",
+        "title": "Верх 359",
+        "description": "Верх 359",
+        "img": "./css/clothes/torso/male/Clothing_M_11_359.png",
+        "imgLarge": "./css/clothes/torso/male/Clothing_M_11_359.png",
+        "price": 50
+    }, {
+        "type": "clothes",
+        "category": "Mtorso",
+        "slot": "",
+        "name": "39",
+        "title": "Верх 39",
+        "description": "Верх 39",
+        "img": "./css/clothes/torso/male/Clothing_M_11_39.png",
+        "imgLarge": "./css/clothes/torso/male/Clothing_M_11_39.png",
+        "price": 50
+    }, {
+        "type": "clothes",
+        "category": "Mtorso",
+        "slot": "",
+        "name": "380",
+        "title": "Верх 380",
+        "description": "Верх 380",
+        "img": "./css/clothes/torso/male/Clothing_M_11_380.png",
+        "imgLarge": "./css/clothes/torso/male/Clothing_M_11_380.png",
+        "price": 50
+    }, {
+        "type": "clothes",
+        "category": "Mtorso",
+        "slot": "",
+        "name": "41",
+        "title": "Верх 41",
+        "description": "Верх 41",
+        "img": "./css/clothes/torso/male/Clothing_M_11_41.png",
+        "imgLarge": "./css/clothes/torso/male/Clothing_M_11_41.png",
+        "price": 50
+    }, {
+        "type": "clothes",
+        "category": "Mtorso",
+        "slot": "",
+        "name": "388",
+        "title": "Верх 388",
+        "description": "Верх 388",
+        "img": "./css/clothes/torso/male/Clothing_M_11_388.png",
+        "imgLarge": "./css/clothes/torso/male/Clothing_M_11_388.png",
+        "price": 50
+    }, {
+        "type": "clothes",
+        "category": "Mtorso",
+        "slot": "",
+        "name": "9",
+        "title": "Верх 9",
+        "description": "Верх 9",
+        "img": "./css/clothes/torso/male/Clothing_M_11_9.png",
+        "imgLarge": "./css/clothes/torso/male/Clothing_M_11_9.png",
+        "price": 50
+    }
+]

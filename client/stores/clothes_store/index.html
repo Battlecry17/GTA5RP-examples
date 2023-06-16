@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/83921ec397.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="../weaponsStore.css">
+</head>
+
+<body>
+    <div class="weaponsBlock">
+        <h1 id="weaponsTitle">Магазин одежды</h1>
+        <button class="btn btn-secondary filterButtons" id="headWeaponsB"><img class="filterImages"
+                src="css/Items/Original/hat.png"></button>
+        <button class="btn btn-secondary filterButtons" id="masksWeaponsB"><img class="filterImages"
+                src="css/Items/Original/mask.png"></button>
+        <button class="btn btn-secondary filterButtons" id="legsWeaponsB"><img class="filterImages"
+                src="css/Items/Original/shorts.png"></button>
+        <button class="btn btn-secondary filterButtons" id="shoesWeaponsB"><img class="filterImages"
+                src="css/Items/Original/shoe.png"></button>
+        <button class="btn btn-secondary filterButtons" id="torsoWeaponsB"><img class="filterImages"
+                src="css/Items/Original/tshirt.png"></button>
+        <div class="container weaponsList" id="FheadWeapons">
+
+        </div>
+        <div class="container weaponsList" id="MheadWeapons">
+
+        </div>
+        <div class="container weaponsList" id="masksWeapons">
+
+        </div>
+        <div class="container weaponsList" id="FlegsWeapons">
+
+        </div>
+        <div class="container weaponsList" id="MlegsWeapons">
+
+        </div>
+        <div class="container weaponsList" id="FshoesWeapons">
+
+        </div>
+        <div class="container weaponsList" id="MshoesWeapons">
+
+        </div>
+        <div class="container weaponsList" id="FtorsoWeapons">
+
+        </div>
+        <div class="container weaponsList" id="MtorsoWeapons">
+
+        </div>
+
+        <!-- <div class="weaponsShopSlots riflesSlots" id="weaponSlot0">
+				<div class="weaponsProduct weapon rifles weapon_assaultrifle" id="objectInweaponSlot0" value="0">
+					<img src="css/Items/Original/rifle.svg" class="generalItemImg">
+					<h1 class="weaponsCost">$100</h1>
+				</div>
+			</div> -->
+
+        <div class="container" id="weaponsInfo">
+            <h1 id="weaponText"></h1>
+            <img id="weaponImg" src="./css/weapons/Assault-rifle.png">
+            <h2 id="weaponDescription"></h2>
+            <h2 id="weaponPrice"></h2>
+            <button class="btn btn-success" id="buyB">Купить</button>
+        </div>
+        <div class="bottomDiv">
+			<h1 class="bottomH1">Ваши деньги: </h1>
+			<h1 class="bottomH1" id="playerMoney">$1000</h1>
+		</div>
+    </div>
+    <script src="indexB.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,126 @@
+html,
+body {
+    background-color: rgba(34, 40, 49, 0.6);
+}
+
+div {
+    display: block;
+    font-family: 'Andika', sans-serif;
+}
+
+#generalStart {
+    width: 60%;
+    height: auto;
+    background-color: #423F3E;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(calc(-50% - .5px)) translateY(calc(-50% - .5px));
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    color: white;
+    padding-bottom: 2%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.innerDiv {
+    text-align: left;
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+
+h2 {
+    display: inline;
+    font-size: large;
+}
+
+.description {
+    color: #00ADB5;
+}
+
+button {
+    background-color: #2B2B2B;
+    color: #EDEDED;
+    border-radius: 5px;
+    width: 30%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    border: none;
+    font-family: 'Andika', sans-serif;
+    font-size: medium;
+    text-decoration: none;
+    border: 0.25px solid rgba(0, 0, 0, 0.5);
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+}
+
+#buttonsDiv {
+    margin-top: 2%;
+}
+
+#start:hover, .startRoad:hover, #continue:hover {
+    background: #28a745;
+}
+
+#back, #finish:hover, #refuse:hover {
+    background: #dc3545;
+}
+
+.secondaryB {
+    display: none;
+}
+
+
+#center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background-color: #423F3E;
+    display: block;
+    width: 80%;
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    font-family: 'Andika', sans-serif;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+#buttonsOverDiv {
+    margin-bottom: 1%;
+}
+
+#center h1 {
+    margin-top: 0;
+    margin-bottom: 2%;
+}
+
+#center button {
+    background-color: #2B2B2B;
+    color: #EDEDED;
+    border-radius: 5px;
+    width: 30%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    border: none;
+    font-family: 'Andika', sans-serif;
+    font-size: medium;
+    text-decoration: none;
+    border: 0.25px solid rgba(0, 0, 0, 0.5);
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+}
+
+.secondaryB {
+    display: none;
+}
+
+#generalStart, #center{
+    display: none;
+}

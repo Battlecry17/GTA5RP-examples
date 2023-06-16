@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/playerStats/playerStats.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid playerGeneralInfo">
+        <div class="generalPlayerButtons">
+            <button class="btn btn-dark outsideButtons btnTop btnGeneral">Общее</button>
+            <button class="btn btn-dark outsideButtons btnBot btnDocuments">Документы</button>
+        </div>
+        <div class="generalStats">
+            <h6 class="firstH">Деньги: </h6>
+            <h6 id="moneyQ">$0</h6>
+            <!-- <h6>Bank: </h6>
+            <h6 id="bankMoney">0</h6> -->
+            <h6>Работа </h6>
+            <h6 id="jobValue">0</h6>
+            <h6>Фракция </h6>
+            <h6 id="fractionValue">0</h6>
+            <h6 id="experienceLvl">Уровень 1</h6>
+            <div class="progress-bar" style="--width: 0" data-label=""></div>
+            <h6>Голод </h6>
+            <h6 id="hunger">100%</h6>
+            <h6>Жажда </h6>
+            <h6 id="thirst">100%</h6>
+            <!-- <h6>Досуг: </h6>
+            <h6 id="leisure">0</h6> -->
+        </div>
+
+        <div class="documents">
+            <h6 class="firstH">Паспорт:</h6>
+            <div id="passportDiv">
+                <div id="divPassportName">
+                    <img src="../css/playerStats/logo.png" alt="" id="logoPassportImg" align="left">
+                    <h1 id="cityLabel" class="passH1">LOS-SANTOS CITY</h1>
+                    <h1 id="passportLabel" class="passH1">УДОСТОВЕРЕНИЕ ЛИЧНОСТИ / IDENTITY CARD</h1>
+                </div>
+                <img src="../css/playerStats/portrait.png" id="portraitPassport" alt="">
+                <div id="divPassportText">
+                    <div class="firstDivs">
+                        <h2 class="passH2">Имя / Name</h2>
+                        <h1 id="passportName" class="passH1">Ivan</h1>
+                    </div>
+                    <div class="firstDivs">
+                        <h2 class="passH2">Фамилия / Surname</h2>
+                        <h1 id="passportSurname" class="passH1">Nebraska</h1>
+                    </div>
+                    <div class="rowDivs">
+                        <div class="divInRow" id="sexLeftDiv">
+                            <h2 class="textInRow passH2">Пол / Sex</h2>
+                            <h1 id="passportGender" class="passH1">M</h1>
+                        </div>
+                        <div class="divInRow secondDivRow">
+                            <h2 class="textInRow passH2">Место рождения / Place of birth</h2>
+                            <h1 class="passH1">Los-Santos</h1>
+                        </div>
+                    </div>
+                    <div class="rowDivs">
+                        <div class="divInRow" id="issLeftDiv">
+                            <h2 class="textInRow passH2">Дата выдачи / Issue date</h2>
+                            <h1 id="passportIssdate" class="passH1">21.12.2021</h1>
+                        </div>
+                        <div class="divInRow">
+                            <h2 class="textInRow passH2">Срок действия / Expiry date</h2>
+                            <h1 id="passportExpdate" class="passH1">21.12.2031</h1>
+                        </div>
+                    </div>
+                    <div class="rowDivs">
+                        <h2 class="passH2">Персональный код / Personal ID</h2>
+                        <h1 id="passportId" class="passH1">322281-74512</h1>
+                    </div>
+                </div>
+            </div>
+            <h6>Водительские права:</h6>
+            <div id="licenseDiv">
+                <h1 id="drivingL">Driving license</h1>
+                <img src="../css/playerStats/man.png" alt="" id="profileImg" align="left">
+                <div id="divTexts">
+                    <div>
+                        <h2 class="topLabels">License ID: </h2>
+                        <h2 id="drivingLicenseId">322281-20128</h2>
+                    </div>
+                    <div>
+                        <h2 id="drivingLicenseName" class="topLabels">Ivan </h2>
+                        <h2 id="drivingLicenseSurname" class="topLabels"> Nebraska</h2>
+                    </div>
+
+                    <div class="insideElements">
+                        <div>
+                            <h3 class="labelsLicense">Age </h3>
+                            <h3 id="drivingLicenseAge" class="insertData">26</h3>
+                        </div>
+                        <div>
+                            <h3 class="labelsLicense">Sex </h3 class="insertData">
+                            <h3 id="drivingLicenseSex">M</h3>
+                        </div>
+
+                    </div>
+                    <div class="insideElements">
+                        <div>
+                            <h3 class="labelsLicense">Iss </h3>
+                            <h3 id="drivingLicenseIssDate" class="insertData">12-21-2025</h3>
+                        </div>
+
+                        <div>
+                            <h3 class="labelsLicense">Exp </h3>
+                            <h3 id="drivingLicenseExpDate" class="insertData">12-21-2035</h3>
+                        </div>
+                    </div>
+                    <!-- <div id="lastElem">
+                        <h3 class="labelsLicense">Class </h3>
+                        <h3 class="insertData">B</h3>
+                    </div> -->
+                </div>
+            </div>
+            <h6>Лицензия на оружие:</h6>
+            <div id="generalDocDiv">
+                <h1 class="wLicenseTitle">ЛИЦЕНЗИЯ НА ВЛАДЕНИЕ ОРУЖИЕМ</h1>
+                <div class="gunsDiv">
+                    <img src="../css/playerStats/gun.png" id="leftGun" class="gunImg">
+                    <h2 class="gunH2">УДОСТОВЕРЕНИЕ</h2>
+                    <img src="../css/playerStats/gun.png" class="gunImg">
+                </div>
+                <div class="gen">
+                    <div class="weaponsLleft">
+                        <h2 id="weaponsLicenseName" class="weaponLicenseH2 nameSurnameLicenseTitle">Ivan </h2>
+                        <h2 id="weaponsLicenseSurname" class="weaponLicenseH2 nameSurnameLicenseTitle"> Nebraska</h2>
+                        <span class="weaponLicenseH2 cityWeapon">город Los-Santos</span>
+                        <span class="firstWeaponsSpan weaponsSpan weaponsLeftSpan">Пол: <h2 id="weaponGender"
+                                class="weaponLicenseH2 insideSpan">М</h2></span>
+                        <span class="weaponsSpan weaponsLeftSpan">Рост: <h2 class="weaponLicenseH2 insideSpan">1,82</h2>
+                        </span>
+                        <span class="weaponsSpan weaponsLeftSpan">Вес: <h2 class="weaponLicenseH2 insideSpan">80</h2>
+                        </span>
+                        <span class="weaponsSpan weaponsLeftSpan">Волосы: <h2 class="weaponLicenseH2 insideSpan">Темные
+                            </h2></span>
+                        <span class="weaponsSpan weaponsLeftSpan">Глаза: <h2 class="weaponLicenseH2 insideSpan">Голубые
+                            </h2></span>
+                    </div>
+                    <div class="weaponsLright">
+                        <span>
+                            <h2 class="weaponLicenseH2 licenseTitle">Лицензия: </h2>
+                            <h2 id="weaponLicenseID" class="weaponLicenseH2 licenseTitle">00001</h2>
+                        </span>
+                        <span class="firstWeaponsSpan weaponsSpan weaponsRightSpan">Тип: <h2
+                                class="weaponLicenseH2 insideSpan">Самооборона</h2></span>
+                        <span class="weaponsSpan weaponsRightSpan">Выпущена: <h2 id="weaponsIssueDate"
+                                class="weaponLicenseH2 insideSpan">
+                                15.02.2022</h2></span>
+                        <span class="weaponsSpan weaponsRightSpan">Истекает: <h2 id="weaponsExpireDate"
+                                class="weaponLicenseH2 insideSpan">
+                                Никогда</h2></span>
+                        <img src="../css/playerStats/stamp.png" class="stampImg">
+                    </div>
+                </div>
+            </div>
+
+            <h6>Медицинская справка:</h6>
+            <div id="medicalRecordDiv">
+                <h1 class="h1Medical">Врачебное свидетельство о состоянии здоровья</h1>
+                <span class="spanMedical">Выдано: <h2 id="medicalInquiryName" class="h2Medical">Ivan </h2>
+                    <h2 id="medicalInquirySurname" class="h2Medical">Nebraska</h2>
+                </span>
+                <span class="spanMedical">Врачом: <h2 class="h2Medical">психиатр </h2>
+                    <h2 id="doctorFullname" class="h2Medical medSecondLine">Anton Dolin</h2>
+                </span>
+                <span class="spanMedical">В том, что результатом медицинского освидетельствования проведенного: <h2
+                        id="medicalInquiryDate" class="h2Medical">10.02.2021 </h2>
+                    <h2 class="h2Medical medSecondLine">отклонений не выявлено</h2>
+                </span>
+                <img src="../css/playerStats/certificate.png" class="medicalrecordStamp">
+                <h2 id="doctorInitials" class="h2Medical medSignature">Anton D.</h2>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(".btnGeneral").click(function() {
+            $(".generalStats").show();
+            $(".documents").hide();
+        });
+        $(".btnDocuments").click(function() {
+            $(".generalStats").hide();
+            $(".documents").show();
+        });
+
+        function addPassport(name, surname, gender, iss, exp, id) {
+            var functionArray = Array.from(arguments);
+
+            const passportClassNames = ["passportName", "passportSurname", "passportGender",
+                "passportIssdate", "passportExpdate", "passportId"
+            ];
+            passportClassNames.map(function(pname, i) {
+                document.getElementById(pname).innerHTML = functionArray[i];
+            });
+
+            if (gender == 1) {
+                gender = 'M';
+            } else if (gender == 0) {
+                gender = 'F';
+            }
+            document.getElementById("passportGender").innerHTML = gender;
+
+            document.getElementById("passportDiv").style.display = "block";
+        }
+
+        function addLicense(name, surname, age, gender, char_id, iss, exp) {
+            var functionArray = Array.from(arguments);
+
+            const licenseClassNames = ["drivingLicenseName", "drivingLicenseSurname", "drivingLicenseAge",
+                "drivingLicenseSex", "drivingLicenseId", "drivingLicenseIssDate", "drivingLicenseExpDate"
+            ];
+            licenseClassNames.map(function(name, i) {
+                document.getElementById(name).innerHTML = functionArray[i];
+            });
+
+            if (gender == 1) {
+                gender = 'M';
+            } else if (gender == 0) {
+                gender = 'F';
+            }
+            document.getElementById("drivingLicenseSex").innerHTML = gender;
+
+            document.getElementById("licenseDiv").style.display = "block";
+        }
+
+        function addWeaponLicense(name, surname, gender, licenseID, issueDate, expireDate) {
+            var functionArray = Array.from(arguments);
+
+            const weaponClassNames = ["weaponsLicenseName", "weaponsLicenseSurname", "weaponGender",
+                "weaponLicenseID", "weaponsIssueDate", "weaponsExpireDate"
+            ];
+            weaponClassNames.map(function(name, i) {
+                document.getElementById(name).innerHTML = functionArray[i];
+            });
+
+            if (gender == 1) {
+                gender = 'M';
+            } else if (gender == 0) {
+                gender = 'F';
+            }
+            document.getElementById("weaponGender").innerHTML = gender;
+
+            document.getElementById("generalDocDiv").style.display = "block";
+        }
+
+        function addMedicalLicense(name, surname, recieveDate, doctorFullName, doctorInitials) {
+            var functionArray = Array.from(arguments);
+
+            const medicalClassNames = ["medicalInquiryName", "medicalInquirySurname", "medicalInquiryDate",
+                "doctorFullname", "doctorInitials"
+            ];
+            medicalClassNames.map(function(name, i) {
+                document.getElementById(name).innerHTML = functionArray[i];
+            });
+
+            document.getElementById("medicalRecordDiv").style.display = "block";
+        }
+
+        function alterDocuments(type, value) {
+            switch (type) {
+                case 'nameChange':
+                    const nameClassIds = ["passportName", "drivingLicenseName", "weaponsLicenseName",
+                        "medicalInquiryName"
+                    ];
+                    nameClassIds.map(function(name) {
+                        document.getElementById(name).innerHTML = value + ' ';
+                    });
+                    break;
+                case 'surnameChange':
+                    const surnameClassIds = ["passportSurname", "drivingLicenseSurname", "weaponsLicenseSurname",
+                        "medicalInquirySurname"
+                    ];
+                    surnameClassIDs.map(function(surname) {
+                        document.getElementById(surname).innerHTML = value + ' ';
+                    });
+                    break;
+                case 'ageChange':
+                    document.getElementById("drivingLicenseAge").innerHTML = value;
+                default:
+                    console.log('Wrong type!');
+            }
+        }
+
+        const progressBar = document.getElementsByClassName('progress-bar')[0];
+        const computedStyle = getComputedStyle(progressBar);
+        const levelCounter = document.getElementById("experienceLvl");
+        const hungerValue = document.getElementById("hunger");
+        const thirstValue = document.getElementById("thirst");
+        const jobValue = document.getElementById("jobValue");
+        const fractionValue = document.getElementById("fractionValue");
+
+        function updateLvl(points) {
+            progressBar.style.setProperty('--width', points);
+        }
+
+        function resetLvl(level) {
+            levelCounter.innerHTML = "Уровень: " + level;
+            progressBar.style.setProperty('--width', 0);
+        }
+
+        function updateHunger(hunger) {
+            hungerValue.innerHTML = hunger + '%';
+        }
+
+        function updateThirst(thirst) {
+            thirstValue.innerHTML = thirst + '%';
+        }
+
+        function updateJob(job) {
+            switch (job) {
+                case 1:
+                    job = 'Грузчик';
+                    break;
+                case 2:
+                    job = 'Уборщик';
+                    break;
+                case 3:
+                    job = 'Водитель автобуса';
+                    break;
+                case 4:
+                    job = 'Дальнобойщик';
+                    break;
+                case 5:
+                    job = 'Фермер';
+                    break;
+                default:
+                    job = 'Безработный'
+            }
+
+            jobValue.innerHTML = job;
+        }
+
+        function updateFraction(fraction) {
+            switch (fraction) {
+                case 3:
+                    fraction = 'LSPD';
+                    break;
+                case 5:
+                    fraction = 'Медики';
+                    break;
+                case 11:
+                    fraction = 'The Families';
+                    break;
+                case 12:
+                    fraction = 'The Ballas';
+                    break;
+                case 13:
+                    fraction = 'The Vagos';
+                    break;
+                case 14:
+                    fraction = 'The Marabunta';
+                    break;
+                default:
+                    fraction = 'Не состоит в организации';
+            }
+
+            fractionValue.innerHTML = fraction;
+        }
+
+        function updateMoney(money, oldmoney) {
+            if (parseInt(document.getElementById("moneyQ").innerHTML) > parseInt(money)) {
+                document.getElementById("moneyQ").style.color = "red";
+
+            } else if (parseInt(document.getElementById("moneyQ").innerHTML) < parseInt(money)) {
+                document.getElementById("moneyQ").style.color = "green";
+            }
+            setTimeout(() => {
+                document.getElementById("moneyQ").innerHTML = '$' + money;
+                document.getElementById("moneyQ").style.color = "white";
+            }, 1000);
+        }
+    </script>
+</body>
+
+</html>

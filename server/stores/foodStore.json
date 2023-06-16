@@ -1,0 +1,89 @@
+[{
+        "type": "food",
+        "category": "drinks",
+        "slot": "",
+        "name": "water",
+        "title": "Вода",
+        "description": "Вода",
+        "img": "./css/food/drinks/bottle-of-water.png",
+        "imgLarge": "./css/food/drinks/bottle-of-water.png",
+        "price": 10
+    },
+    {
+        "type": "food",
+        "category": "drinks",
+        "slot": "",
+        "name": "soda",
+        "title": "Содовая",
+        "description": "Содовая",
+        "img": "./css/food/drinks/soda-can.png",
+        "imgLarge": "./css/food/drinks/soda-can.png",
+        "price": 10
+    },
+    {
+        "type": "food",
+        "category": "drinks",
+        "slot": "",
+        "name": "coffe",
+        "title": "Кофе",
+        "description": "Кофе",
+        "img": "./css/food/drinks/to-go.png",
+        "imgLarge": "./css/food/drinks/to-go.png",
+        "price": 10
+    },
+    {
+        "type": "food",
+        "category": "meal",
+        "slot": "",
+        "name": "donut",
+        "title": "Пончик",
+        "description": "Пончик",
+        "img": "./css/food/meal/donut.png",
+        "imgLarge": "./css/food/meal/donut.png",
+        "price": 10
+    },
+    {
+        "type": "food",
+        "category": "meal",
+        "slot": "",
+        "name": "burger",
+        "title": "Чизбургер",
+        "description": "Чизбургер",
+        "img": "./css/food/meal/cheeseburger.png",
+        "imgLarge": "./css/food/meal/cheeseburger.png",
+        "price": 10
+    },
+    {
+        "type": "food",
+        "category": "meal",
+        "slot": "",
+        "name": "pizza",
+        "title": "Пицца",
+        "description": "Пицца",
+        "img": "./css/food/meal/pizza.png",
+        "imgLarge": "./css/food/meal/pizza.png",
+        "price": 10
+    },
+    {
+        "type": "food",
+        "category": "meal_drinks",
+        "slot": "",
+        "name": "soup",
+        "title": "Суп",
+        "description": "Суп",
+        "img": "./css/food/meal_drinks/soup.png",
+        "imgLarge": "./css/food/meal_drinks/soup.png",
+        "price": 10
+    },
+    {
+        "type": "food",
+        "category": "meal_drinks",
+        "slot": "",
+        "name": "chicken",
+        "title": "Жареная курица",
+        "description": "Жареная курица",
+        "img": "./css/food/meal_drinks/chicken.png",
+        "imgLarge": "./css/food/meal_drinks/chicken.png",
+        "price": 10
+    }
+]

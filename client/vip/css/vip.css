@@ -1,0 +1,89 @@
+body,
+html {
+    background: transparent
+}
+
+#vipServices {
+    background-color: #343a40;
+    width: 24% !important;
+    position: absolute;
+    top: 20%;
+    right: 0;
+    border-bottom-left-radius: 5%;
+    border-top-left-radius: 5%;
+    color: white;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-bottom: 1.5%;
+    font-family: 'Andika', sans-serif;
+    font-size: large;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 1%;
+    margin-bottom: 2%;
+}
+
+h2 {
+    font-size: large;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+    display: inline;
+}
+
+h3 {
+    font-size: large;
+    text-align: left;
+}
+
+label {
+    margin-top: 3%;
+    display: block;
+}
+
+#convertLabel {
+    margin-top: 0;
+    font-size: small;
+    color: grey;
+}
+
+input[type=submit] {
+    background-color: #2B2B2B;
+    color: #EDEDED;
+    border-radius: 5px;
+    width: 30%;
+    font-family: 'Andika', sans-serif;
+    font-size: medium;
+    text-decoration: none;
+    border: 0.25px solid rgba(0, 0, 0, 0.5);
+}
+
+#firstLabel {
+    margin-top: 5%;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=text],
+input[type=number] {
+    width: 90%;
+    padding: 1.5% 3%;
+    font-family: 'Andika', sans-serif;
+    border: 0.5px solid black;
+    border-radius: 5px;
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;
+}
+
+#convert {
+    margin-bottom: 0;
+}
+
+#gunLicense {
+    margin-bottom: 1.5%;
+}

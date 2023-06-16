@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="./css/charcreatorFull.css">
+</head>
+
+<body>
+    <div class="container appearance appearanceProperties">
+        <h6 class="appearanceText">Внешность</h6>
+        <button id="gender" class="btn btn-secondary btn-block appearanceButtons">Пол</button>
+        <hr>
+        <button id="genetics" class="btn btn-secondary btn-block appearanceButtons">Генетика</button>
+        <hr>
+        <button id="hairstyle" class="btn btn-secondary btn-block appearanceButtons">Волосы</button>
+        <hr>
+        <button id="beard" class="btn btn-secondary btn-block appearanceButtons">Борода</button>
+        <hr id="beardHr">
+        <button id="eyes" class="btn btn-secondary btn-block appearanceButtons">Глаза</button>
+        <hr>
+        <button id="eyebrows" class="btn btn-secondary btn-block appearanceButtons">Брови</button>
+        <hr>
+        <button id="nose" class="btn btn-secondary btn-block appearanceButtons">Нос</button>
+        <hr>
+        <button id="lips" class="btn btn-secondary btn-block appearanceButtons">Губы</button>
+        <hr>
+        <button id="cheekbones" class="btn btn-secondary btn-block appearanceButtons">Скулы</button>
+        <hr>
+        <button id="jaw" class="btn btn-secondary btn-block appearanceButtons">Челюсть</button>
+        <hr>
+        <button id="chin" class="btn btn-secondary btn-block appearanceButtons">Подбородок</button>
+        <hr>
+        <button id="neck" class="btn btn-secondary btn-block appearanceButtons">Шея</button>
+        <hr>
+        <button id="features" class="btn btn-secondary btn-block appearanceButtons">Особенности</button>
+        <hr>
+        <button id="clothes" class="btn btn-secondary btn-block appearanceButtons">Одежда</button>
+        <hr>
+    </div>
+
+    <div class="buttonsContainer">
+        <div class="bottomCards cancelBlock">
+            <button class="btn btn-secondary bottomBtn" onclick="mp.trigger('openSelectChar')"><img
+          class="bottomButtons" src="./css/cancel.png" alt=""></button>
+            <h6 class="buttonTag">Отменить</h6>
+        </div>
+        <div class="bottomCards backBlock">
+            <button class="btn btn-secondary bottomBtn" onclick="$('.finishProperties').hide(); $('.appearanceProperties').show(); $('.continueBlock').css('display', 'inline-block'); $('.finishBlock').hide(); $('.backBlock').css('display', 'none'); $('.cancelBlock').css('display', 'inline-block');"><img
+          class="bottomButtons" src="./css/return.png" alt=""></button>
+            <h6 class="buttonTag">Назад</h6>
+        </div>
+        <div class="bottomCards">
+            <button class="btn btn-secondary bottomBtn" onclick="mp.trigger('generateSignalClient', currentSex);"><img
+          class="bottomButtons" src="./css/random.png" alt=""></button>
+            <h6 class="buttonTag">Случайно</h6>
+        </div>
+        <div class="bottomCards continueBlock">
+            <button class="btn btn-secondary bottomBtn" onclick="$('.finishProperties').show(); $('.appearanceProperties').hide(); $('.finishBlock').css('display', 'inline-block'); $('.continueBlock').hide(); $('.backBlock').css('display', 'inline-block'); $('.cancelBlock').css('display', 'none');"><img
+          class="bottomButtons" src="./css/continue.png" alt=""></button>
+            <h6 class="buttonTag continue">Продолжить</h6>
+        </div>
+        <div class="bottomCards finishBlock">
+            <button type="submit" form="nameSurnameForm" class="btn btn-secondary bottomBtn"><img class="bottomButtons"
+          src="./css/continue.png"></button>
+            <h6 class="buttonTag finish">Закончить</h6>
+        </div>
+    </div>
+
+    <div class="container appearance finishProperties">
+        <form id="nameSurnameForm" onsubmit="mp.trigger('createCharClient', document.getElementById('fname').value, document.getElementById('lname').value, document.getElementById('number').value);" required>
+            <h6 class="appearanceText">Данные о персонаже</h6>
+            <h6 class="h6Block h6BlockTop">Имя</h6>
+            <hr>
+            <input type="text" class="form-control inputFields" id="fname" name="fname" required="required" pattern="[A-Za-zА-Яа-яЁё]{3,}" title="От 3 до 12 букв" maxlength="12">
+            <h6 class="h6Block h6BlockTop">Фамилия</h6>
+            <hr>
+            <input type="text" class="form-control inputFields" id="lname" name="lname" required="required" pattern="[A-Za-zА-Яа-яЁё]{3,}" title="От 3 до 12 букв" maxlength="12">
+            <h6 class="h6Block h6BlockTop">Возраст</h6>
+            <hr>
+            <input type="number" class="form-control inputFields" id="number" name="number" required="required" min="18" max="99">
+        </form>
+    </div>
+
+    <div class="generalBlock genderBlock">
+        <h6 class="generalTitle genderTitle">Пол</h6>
+        <div class="cardGender">
+            <div class="cardGenderClass">
+                <button id="maleButton" name="gender" class="btn btn-dark buttonGender"><img class="genderImg"
+            src="css/male.png" alt="male"></button>
+                <h5 class="genderInsideTitle">Мужской</h5>
+            </div>
+            <div class="cardGenderClass">
+                <button id="femaleButton" name="gender" class="btn btn-dark buttonGender"><img class="genderImg"
+            src="css/female.png" alt="male"></button>
+                <h5 class="genderInsideTitle">Женский</h5>
+            </div>
+        </div>
+    </div>
+
+    <div class="generalBlock geneticsBlock">
+        <h6 class="generalTitle geneticTitle">Генетика</h6>
+        <div>
+            <h6 class="h6Block h6BlockTop">Отец</h6>
+            <hr>
+            <h6 id="fatherSlot" class="h6Block h6BlockBottom">Benjamin</h6>
+            <button id="changeFather" class="btn btn-dark btn-sm buttonEdit bottomElems"><img class="imgEdit"
+          src="css/edit.png" alt=""></button>
+            <h6 class="h6Block h6BlockTop">Мать</h6>
+            <hr>
+            <h6 id="motherSlot" class="h6Block h6BlockBottom">Hannah</h6>
+            <button id="changeMother" class="btn btn-dark btn-sm buttonEdit bottomElems"><img class="imgEdit"
+          src="css/edit.png" alt=""></button>
+            <h6 class="h6Block h6BlockTop">Cхожесть кожи</h6>
+            <hr>
+            <div class="sliderElems bottomElems">
+                <button class="btn btn-secondary btnToggleSkin btnToggleSkinSmaller" onclick="substractElementStep('#skinGeneticsInput', defaultStep)"><img class="arrows" src="css/back.png"
+            alt=""></button>
+                <input id="skinGeneticsInput" name="skin" type="range" min="-1" max="1" step="0.1" value="0" oninput="changeTrackValue('.skinGeneticsOutput', this.value); callCustomization($(this).attr('name'), parseFloat(this.value));">
+                <button class="btn btn-secondary btnToggleSkin btnToggleSkinBigger" onclick="addElementStep('#skinGeneticsInput', defaultStep)"><img class="arrows" src="css/forward.png"
+            alt=""></button>
+                <output class="skinGeneticsOutput">0</output>
+            </div>
+            <h6 class="h6Block h6BlockTop">Cхожесть лица</h6>
+            <hr>
+            <div class="sliderElems">
+                <button class="btn btn-secondary btnToggleSkin btnToggleSkinSmaller" onclick="substractElementStep('#faceGeneticsInput', defaultStep)"><img class="arrows" src="css/back.png"
+            alt=""></button>
+                <input id="faceGeneticsInput" name="shape" type="range" min="-1" max="1" step="0.1" value="0" oninput="changeTrackValue('.faceGeneticsOutput', this.value); callCustomization($(this).attr('name'), parseFloat(this.value));">
+                <button class="btn btn-secondary btnToggleSkin btnToggleSkinBigger" onclick="addElementStep('#faceGeneticsInput', defaultStep)"><img class="arrows" src="css/forward.png"
+            alt=""></button>
+                <output class="faceGeneticsOutput">0</output>
+            </div>
+        </div>
+    </div>
+
+    <div id="changeFatherBlock" class="secondaryBlock">
+        <h6 class="generalTitle geneticTitle">Отец</h6>
+        <div class="insideSecondaryBlock fatherSecondaryBlock">
+        </div>
+    </div>
+
+    <div id="changeMotherBlock" class="secondaryBlock">
+        <h6 class="generalTitle geneticTitle">Мать</h6>
+        <div class="insideSecondaryBlock motherSecondaryBlock">
+        </div>
+    </div>
+
+    <div class="generalBlock hairstyleBlock">
+        <h6 class="generalTitle hairstyleTitle">Волосы</h6>
+        <h6 class="h6Block h6BlockTop">Прическа</h6>
+        <hr>
+        <h6 id="hairCut" class="h6Block h6BlockBottom">Вариант</h6>
+        <button id="changeHair" class="btn btn-dark btn-sm buttonEdit bottomElems"><img class="imgEdit" src="css/edit.png"
+        alt=""></button>
+        <h6 class="h6Block h6BlockTop">Цвет волос</h6>
+        <hr>
+        <h6 id="mainHairColor" class="h6Block h6BlockBottom">Цвет: </h6> <img id="insertImgHairColor" class="insertImgBlock" src="css/generalColors/0.png" alt="">
+        <button id="changeHairColor" class="btn btn-dark btn-sm buttonEdit bottomElems"><img class="imgEdit"
+        src="css/edit.png" alt=""></button>
+        <h6 class="h6Block h6BlockTop">Дополнительный цвет</h6>
+        <hr>
+        <h6 id="secondaryHairColor" class="h6Block h6BlockBottom">Цвет: </h6> <img id="insertImgHairColor2" class="insertImgBlock" src="css/generalColors/0.png" alt="">
+        <button id="changeAdditionalHairColor" class="btn btn-dark btn-sm buttonEdit bottomElems"><img class="imgEdit"
+        src="css/edit.png" alt=""></button>
+    </div>
+
+    <div id="malechangeHairBlock" class="secondaryBlock">
+        <h6 class="generalTitle mailhaircutTitle">Прическа</h6>
+        <div class="insideSecondaryBlock malehaircutSecondaryBlock">
+        </div>
+    </div>
+
+    <div id="femalechangeHairBlock" class="secondaryBlock">
+        <h6 class="generalTitle femailhaircutTitle">Прическа</h6>
+        <div class="insideSecondaryBlock femalehaircutSecondaryBlock">
+        </div>
+    </div>
+
+    <div id="changeHairColorBlock" class="secondaryBlock">
+        <h6 class="generalTitle topTitle">Цвет: </h6>
+        <div class="insideSecondaryBlock hairColorSecondaryBlock">
+        </div>
+    </div>
+
+    <div id="changeAdditionalHairColorBlock" class="secondaryBlock">
+        <h6 class="generalTitle topTitle">Дополнительный цвет</h6>
+        <div class="insideSecondaryBlock addHairColorSecondaryBlock">
+        </div>
+    </div>
+
+    <div class="generalBlock beardBlock">
+        <h6 class="generalTitle beardTitle">Борода</h6>
+        <h6 class="h6Block h6BlockTop">Вариант</h6>
+        <hr>
+        <div class="sliderElems">
+            <button class="btn btn-secondary btnToggleSkin btnToggleSkinSmaller" onclick="substractElementStep('#beardInput', oneStep)"><img class="arrows" src="css/back.png" alt=""></button>
+            <input id="beardInput" name="facialHair" type="range" min="-1" max="29" step="1" value="-1" oninput="changeTrackValue('.beardOutput', this.value); callHeadOverlay($(this).attr('name'), parseInt(this.value))">
+            <button class="btn btn-secondary btnToggleSkin btnToggleSkinBigger" onclick="addElementStep('#beardInput', oneStep)"><img class="arrows" src="css/forward.png" alt=""></button>
+            <output class="beardOutput">0</output>
+        </div>
+        <h6 class="h6Block h6BlockTop">Цвет бороды</h6>
+        <hr>
+        <h6 id="beardColor" class="h6Block h6BlockBottom">Цвет: </h6> <img id="insertImgFaceColor" class="insertImgBlock" src="css/generalColors/0.png" alt="">
+        <button id="changeBeardColor" class="btn btn-dark btn-sm buttonEdit bottomElems"><img class="imgEdit"
+        src="css/edit.png" alt=""></button>
+    </div>
+
+    <div id="changeBeardColorBlock" class="secondaryBlock">
+        <h6 class="generalTitle topTitle">Цвет: </h6>
+        <div class="insideSecondaryBlock beardColorBlock">
+        </div>
+    </div>
+
+    <div class="generalBlock eyesBlock">
+        <h6 class="generalTitle eyesTitle">Глаза</h6>
+        <h6 class="h6Block h6BlockTop">Размер глаз</h6>
+        <hr>
+        <div class="sliderElems">
+            <button class="btn btn-secondary btnToggleSkin btnToggleSkinSmaller" onclick="substractElementStep('#eyesInput', defaultStep)"><img class="arrows" src="css/back.png"
+          alt=""></button>
+            <input id="eyesInput" name="eyesShape" type="range" min="-1" max="1" step="0.1" value="0" oninput="changeTrackValue('.eyesOutput', this.value); callCustomization($(this).attr('name'), parseFloat(this.value))">
+            <button class="btn btn-secondary btnToggleSkin btnToggleSkinBigger" onclick="addElementStep('#eyesInput', defaultStep)"><img class="arrows" src="css/forward.png" alt=""></button>
+            <output class="eyesOutput">0</output>
+        </div>
+        <h6 class="h6Block h6BlockTop">Цвет глаз</h6>
+        <hr>
+        <div class="sliderElems">
+            <button class="btn btn-secondary btnToggleSkin btnToggleSkinSmaller" onclick="substractElementStep('#eyesColorInput', oneStep)"><img class="arrows" src="css/back.png"
+          alt=""></button>
+            <input id="eyesColorInput" name="eyesShape" type="range" min="0" max="31" step="1" value="0" oninput="changeTrackValue('.eyesColorOutput', this.value); callEyecolor(this.value)">
+            <button class="btn btn-secondary btnToggleSkin btnToggleSkinBigger" onclick="addElementStep('#eyesColorInput', oneStep)"><img class="arrows" src="css/forward.png" alt=""></button>
+            <output class="eyesColorOutput">0</output>
+        </div>
+    </div>
+
+    <div class="generalBlock eyebrowsBlock">
+        <h6 class="generalTitle eyebrowsTitle">Брови</h6>
+        <h6 class="h6Block h6BlockTop">Вариант</h6>
+        <hr>
+        <div class="sliderElems">
+            <button class="btn btn-secondary btnToggleSkin btnToggleSkinSmaller" onclick="substractElementStep('#eyebrowsInput', oneStep)"><img class="arrows" src="css/back.png"
+          alt=""></button>
+            <input id="eyebrowsInput" name="eyebrows" type="range" min="-1" max="34" step="1" value="-1" oninput="changeTrackValue('.eyebrowsOutput', this.value); callHeadOverlay($(this).attr('name'), parseInt(this.value))">
+            <button class="btn btn-secondary btnToggleSkin btnToggleSkinBigger" onclick="addElementStep('#eyebrowsInput', oneStep)"><img class="arrows" src="css/forward.png" alt=""></button>
+            <output class="eyebrowsOutput">0</output>
+        </div>
+        <h6 class="h6Block h6BlockTop">Цвет бровей</h6>
+        <hr>
+        <h6 id="eyebrowsColorText" class="h6Block h6BlockBottom">Цвет: </h6> <img id="insertImgEyebrowsColor" class="insertImgBlock" src="css/generalColors/0.png" alt="">
+        <button id="changeEyebrowsColor" class="btn btn-dark btn-sm buttonEdit bottomElems"><img class="imgEdit"
+        src="css/edit.png" alt=""></button>
+        <h6 class="h6Block h6BlockTop">Высота бровей</h6>
+        <hr>
+        <div class="sliderElems">
+            <button class="btn btn-secondary btnToggleSkin btnToggleSkinSmaller" onclick="substractElementStep('#eyebrowsHeigtInput', defaultStep)"><img class="arrows" src="css/back.png"
+          alt=""></button>
+            <input id="eyebrowsHeigtInput" name="browHeight" type="range" min="-1" max="1" step="0.1" value="0" oninput="changeTrackValue('.eyebrowsHeigtOutput', this.value); callCustomization($(this).attr('name'), parseFloat(this.value));">
+            <button class="btn btn-secondary btnToggleSkin btnToggleSkinBigger" onclick="addElementStep('#eyebrowsHeigtInput', defaultStep)"><img class="arrows" src="css/forward.png"
+          alt=""></button>
+            <output class="eyebrowsHeigtOutput">0</output>
+        </div>
+        <h6 class="h6Block h6BlockTop">Глубина бровей</h6>
+        <hr>
+        <div class="sliderElems">
+            <button class="btn btn-secondary btnToggleSkin btnToggleSkinSmaller" onclick="substractElementStep('#eyebrowsDeepInput', defaultStep)"><img class="arrows" src="css/back.png"
+          alt=""></button>
+            <input id="eyebrowsDeepInput" name="browWidth" type="range" min="-1" max="1" step="0.1" value="0" oninput="changeTrackValue('.eyebrowsDeepOutput', this.value); callCustomization($(this).attr('name'), parseFloat(this.value));">
+            <button class="btn btn-secondary btnToggleSkin btnToggleSkinBigger" onclick="addElementStep('#eyebrowsDeepInput', defaultStep)"><img class="arrows" src="css/forward.png"
+          alt=""></button>
+            <output class="eyebrowsDeepOutput">0</output>
+        </div>
+    </div>
+
+    <div id="changeEyebrowsColorBlock" class="secondaryBlock">
+        <h6 class="generalTitle topTitle">Цвет: </h6>
+        <div class="insideSecondaryBlock eyebrowsColorBlock">
+        </div>
+    </div>
+
+    <div class="generalBlock noseBlock">
+        <h6 class="generalTitle noseTitle">Нос</h6>
+        <h6 class="h6Block h6BlockTop">Ширина носа</h6>
+        <hr>
+        <div class="sliderElems">
+            <button class="btn btn-secondary btnToggleSkin btnToggleSkinSmaller" onclick="substractElementStep('#noseWidthInput', defaultStep)"><img class="arrows" src="css/back.png"
+          alt=""></button>
+            <input id="noseWidthInput" name="noseWidth" type="range" min="-1" max="1" step="0.1" value="0" oninput="changeTrackValue('.noseWidthOutput', this.value); callCustomization($(this).attr('name'), parseFloat(this.value));">
+            <button class="btn btn-secondary btnToggleSkin btnToggleSkinBigger" onclick="addElementStep('#noseWidthInput', defaultStep)"><img class="arrows" src="css/forward.png"
+          alt=""></button>
+            <output class="noseWidthOutput">0</output>
+        </div>
+        <h6 class="h6Block h6BlockTop">Высота носа</h6>
+        <hr>
+        <div class="sliderElems">
+            <button class="btn btn-secondary btnToggleSkin btnToggleSkinSmaller" onclick="substractElementStep('#noseHeightInput', defaultStep)"><img class="arrows" src="css/back.png"
+          alt=""></button>
+            <input id="noseHeightInput" name="noseHeight" type="range" min="-1" max="1" step="0.1" value="0" oninput="changeTrackValue('.noseHeightOutput', this.value); callCustomization($(this).attr('name'), parseFloat(this.value));">
+            <button class="btn btn-secondary btnToggleSkin btnToggleSkinBigger" onclick="addElementStep('#noseHeightInput', defaultStep)"><img class="arrows" src="css/forward.png"
+          alt=""></button>
+            <output class="noseHeightOutput">0</output>
+        </div>
+        <h6 class="h6Block h6BlockTop">Длина кончика</h6>
+        <hr>
+        <div class="sliderElems">
+            <button class="btn btn-secondary btnToggleSkin btnToggleSkinSmaller" onclick="substractElementStep('#noseTipLengthInput', defaultStep)"><img class="arrows" src="css/back.png"
+          alt=""></button>
+            <input id="noseTipLengthInput" name="noseLength" type="range" min="-1" max="1" step="0.1" value="0" oninput="changeTrackValue('.noseTipLengthOutput', this.value); callCustomization($(this).attr('name'), parseFloat(this.value));">
+            <button class="btn btn-secondary btnToggleSkin btnToggleSkinBigger" onclick="addElementStep('#noseTipLengthInput', defaultStep)"><img class="arrows" src="css/forward.png"
+          alt=""></button>
+            <output class="noseTipLengthOutput">0</output>
+        </div>
+        <h6 class="h6Block h6BlockTop">Высота кончика</h6>
+        <hr>
+        <div class="sliderElems">
+            <button class="btn btn-secondary btnToggleSkin btnToggleSkinSmaller" onclick="substractElementStep('#noseTipHeightInput', defaultStep)"><img class="arrows" src="css/back.png"
+          alt=""></button>
+            <input id="noseTipHeightInput" name="noseTip" type="range" min="-1" max="1" step="0.1" value="0" oninput="changeTrackValue('.noseTipHeightOutput', this.value); callCustomization($(this).attr('name'), parseFloat(this.value));">
+            <button class="btn btn-secondary btnToggleSkin btnToggleSkinBigger" onclick="addElementStep('#noseTipHeightInput', defaultStep)"><img class="arrows" src="css/forward.png"
+          alt=""></button>
+            <output class="noseTipHeightOutput">0</output>
+        </div>
+        <h6 class="h6Block h6BlockTop">Размер горбинки</h6>
+        <hr>
+        <div class="sliderElems">
+            <button class="btn btn-secondary btnToggleSkin btnToggleSkinSmaller" onclick="substractElementStep('#noseHumpInput', defaultStep)"><img class="arrows" src="css/back.png"
+          alt=""></button>
+            <input id="noseHumpInput" name="noseBridge" type="range" min="-1" max="1" step="0.1" value="0" oninput="changeTrackValue('.noseHumpOutput', this.value); callCustomization($(this).attr('name'), parseFloat(this.value));">
+            <button class="btn btn-secondary btnToggleSkin btnToggleSkinBigger" onclick="addElementStep('#noseHumpInput', defaultStep)"><img class="arrows" src="css/forward.png"
+          alt=""></button>
+            <output class="noseHumpOutput">0</output>
+        </div>
+        <h6 class="h6Block h6BlockTop">Смещение носа</h6>
+        <hr>
+        <div class="sliderElems">
+            <button class="btn btn-secondary btnToggleSkin btnToggleSkinSmaller" onclick="substractElementStep('#noseDepthInput', defaultStep)"><img class="arrows" src="css/back.png"
+          alt=""></button>
+            <input id="noseDepthInput" name="noseBridgeShift" type="range" min="-1" max="1" step="0.1" value="0" oninput="changeTrackValue('.noseDepthOutput', this.value); callCustomization($(this).attr('name'), parseFloat(this.value));">
+            <button class="btn btn-secondary btnToggleSkin btnToggleSkinBigger" onclick="addElementStep('#noseDepthInput', defaultStep)"><img class="arrows" src="css/forward.png"
+          alt=""></button>
+            <output class="noseDepthOutput">0</output>
+        </div>
+    </div>
+
+    <div class="generalBlock lipsBlock">
+        <h6 class="generalTitle lipsTitle">Губы</h6>
+        <h6 class="h6Block h6BlockTop">Толщина губ</h6>
+        <hr>
+        <div class="sliderElems">
+            <button class="btn btn-secondary btnToggleSkin btnToggleSkinSmaller" onclick="substractElementStep('#lipsDepthInput', defaultStep)"><img class="arrows" src="css/back.png"
+          alt=""></button>
+            <input id="lipsDepthInput" name="lips" type="range" min="-1" max="1" step="0.1" value="0" oninput="changeTrackValue('.lipsDepthOutput', this.value); callCustomization($(this).attr('name'), parseFloat(this.value));">
+            <button class="btn btn-secondary btnToggleSkin btnToggleSkinBigger" onclick="addElementStep('#lipsDepthInput', defaultStep)"><img class="arrows" src="css/forward.png"
+          alt=""></button>
+            <output class="lipsDepthOutput">0</output>
+        </div>
+        <h6 class="h6Block h6BlockTop">Цвет губ</h6>
+        <hr>
+        <h6 id="lipstickColorText" class="h6Block h6BlockBottom">Цвет: </h6> <img id="insertImgLipstickColor" class="insertImgBlock" src="css/generalColors/11.png" alt="">
+        <button id="changeLipsColor" class="btn btn-dark btn-sm buttonEdit bottomElems"><img class="imgEdit"
+        src="css/edit.png" alt=""></button>
+        <h6 id="lipstickH6" class="h6Block h6BlockTop">Губная помада</h6>
+        <hr id="lipstickHr">
+        <div id="lipstickDiv" class="sliderElems">
+            <button class="btn btn-secondary btnToggleSkin btnToggleSkinSmaller" onclick="substractElementStep('#pomadeInput', oneStep)"><img class="arrows" src="css/back.png" alt=""></button>
+            <input id="pomadeInput" name="lipstick" type="range" min="-1" max="10" step="1" value="-1" oninput="changeTrackValue('.pomadeOutput', this.value); callHeadOverlay($(this).attr('name'), parseInt(this.value))">
+            <button class="btn btn-secondary btnToggleSkin btnToggleSkinBigger" onclick="addElementStep('#pomadeInput', oneStep)"><img class="arrows" src="css/forward.png" alt=""></button>
+            <output class="pomadeOutput">-1</output>
+        </div>
+    </div>
+
+    <div id="changeLipsColorBlock" class="secondaryBlock">
+        <h6 class="generalTitle topTitle">Цвет: </h6>
+        <div class="insideSecondaryBlock lipsColorBlock">
+        </div>
+    </div>
+
+    <div class="generalBlock cheekbonesBlock">
+        <h6 class="generalTitle cheekbonesTitle">Скулы</h6>
+        <h6 class="h6Block h6BlockTop">Высота скул</h6>
+        <hr>
+        <div class="sliderElems">
+            <button class="btn btn-secondary btnToggleSkin btnToggleSkinSmaller" onclick="substractElementStep('#cheekbonesHeightInput', defaultStep)"><img class="arrows" src="css/back.png"
+          alt=""></button>
+            <input id="cheekbonesHeightInput" name="cBoneHeight" type="range" min="-1" max="1" step="0.1" value="0" oninput="changeTrackValue('.cheekbonesHeightOutput', this.value); callCustomization($(this).attr('name'), parseFloat(this.value));">
+            <button class="btn btn-secondary btnToggleSkin btnToggleSkinBigger" onclick="addElementStep('#cheekbonesHeightInput', defaultStep)"><img class="arrows" src="css/forward.png"
+          alt=""></button>
+            <output class="cheekbonesHeightOutput">0</output>
+        </div>
+        <h6 class="h6Block h6BlockTop">Ширина скул</h6>
+        <hr>
+        <div class="sliderElems">
+            <button class="btn btn-secondary btnToggleSkin btnToggleSkinSmaller" onclick="substractElementStep('#cheekbonesWidthInput', defaultStep)"><img class="arrows" src="css/back.png"
+          alt=""></button>
+            <input id="cheekbonesWidthInput" name="cBoneWidth" type="range" min="-1" max="1" step="0.1" value="0" oninput="changeTrackValue('.cheekbonesWidthOutput', this.value); callCustomization($(this).attr('name'), parseFloat(this.value));">
+            <button class="btn btn-secondary btnToggleSkin btnToggleSkinBigger" onclick="addElementStep('#cheekbonesWidthInput', defaultStep)"><img class="arrows" src="css/forward.png"
+          alt=""></button>
+            <output class="cheekbonesWidthOutput">0</output>
+        </div>
+        <h6 class="h6Block h6BlockTop">Глубина щеки</h6>
+        <hr>
+        <div class="sliderElems">
+            <button class="btn btn-secondary btnToggleSkin btnToggleSkinSmaller" onclick="substractElementStep('#cheekDepthInput', defaultStep)"><img class="arrows" src="css/back.png"
+          alt=""></button>
+            <input id="cheekDepthInput" name="cheekWidth" type="range" min="-1" max="1" step="0.1" value="0" oninput="changeTrackValue('.cheekDepthOutput', this.value); callCustomization($(this).attr('name'), parseFloat(this.value));">
+            <button class="btn btn-secondary btnToggleSkin btnToggleSkinBigger" onclick="addElementStep('#cheekDepthInput', defaultStep)"><img class="arrows" src="css/forward.png"
+          alt=""></button>
+            <output class="cheekDepthOutput">0</output>
+        </div>
+        <h6 id="blushH6" class="h6Block h6BlockTop">Румянец</h6>
+        <hr id="blushHr">
+        <div id="blushDiv" class="sliderElems">
+            <button class="btn btn-secondary btnToggleSkin btnToggleSkinSmaller" onclick="substractElementStep('#blushInput', oneStep)"><img class="arrows" src="css/back.png" alt=""></button>
+            <input id="blushInput" name="blush" type="range" min="-1" max="32" step="1" value="-1" oninput="changeTrackValue('.blushOutput', this.value); callHeadOverlay($(this).attr('name'), parseInt(this.value))">
+            <button class="btn btn-secondary btnToggleSkin btnToggleSkinBigger" onclick="addElementStep('#blushInput', oneStep)"><img class="arrows" src="css/forward.png" alt=""></button>
+            <output class="blushOutput">-1</output>
+        </div>
+    </div>
+
+    <div class="generalBlock jawBlock">
+        <h6 class="generalTitle jawTitle">Челюсть</h6>
+        <h6 class="h6Block h6BlockTop">Ширина челюсти</h6>
+        <hr>
+        <div class="sliderElems">
+            <button class="btn btn-secondary btnToggleSkin btnToggleSkinSmaller" onclick="substractElementStep('#jawWidthInput', defaultStep)"><img class="arrows" src="css/back.png"
+          alt=""></button>
+            <input id="jawWidthInput" name="jawWidth" type="range" min="-1" max="1" step="0.1" value="0" oninput="changeTrackValue('.jawWidthOutput', this.value); callCustomization($(this).attr('name'), parseFloat(this.value));">
+            <button class="btn btn-secondary btnToggleSkin btnToggleSkinBigger" onclick="addElementStep('#jawWidthInput', defaultStep)"><img class="arrows" src="css/forward.png"
+          alt=""></button>
+            <output class="jawWidthOutput">0</output>
+        </div>
+        <h6 class="h6Block h6BlockTop">Высота челюсти</h6>
+        <hr>
+        <div class="sliderElems">
+            <button class="btn btn-secondary btnToggleSkin btnToggleSkinSmaller" onclick="substractElementStep('#jawShapeInput', defaultStep)"><img class="arrows" src="css/back.png"
+          alt=""></button>
+            <input id="jawShapeInput" name="jawHeight" type="range" min="-1" max="1" step="0.1" value="0" oninput="changeTrackValue('.jawShapeOutput', this.value); callCustomization($(this).attr('name'), parseFloat(this.value));">
+            <button class="btn btn-secondary btnToggleSkin btnToggleSkinBigger" onclick="addElementStep('#jawShapeInput', defaultStep)"><img class="arrows" src="css/forward.png"
+          alt=""></button>
+            <output class="jawShapeOutput">0</output>
+        </div>
+    </div>
+
+    <div class="generalBlock chinBlock">
+        <h6 class="generalTitle chinTitle">Подбородок</h6>
+        <h6 class="h6Block h6BlockTop">Высота подбородка</h6>
+        <hr>
+        <div class="sliderElems">
+            <button class="btn btn-secondary btnToggleSkin btnToggleSkinSmaller" onclick="substractElementStep('#chinHeightInput', defaultStep)"><img class="arrows" src="css/back.png"
+          alt=""></button>
+            <input id="chinHeightInput" name="chinPos" type="range" min="-1" max="1" step="0.1" value="0" oninput="changeTrackValue('.chinHeightOutput', this.value); callCustomization($(this).attr('name'), parseFloat(this.value));">
+            <button class="btn btn-secondary btnToggleSkin btnToggleSkinBigger" onclick="addElementStep('#chinHeightInput', defaultStep)"><img class="arrows" src="css/forward.png"
+          alt=""></button>
+            <output class="chinHeightOutput">0</output>
+        </div>
+        <h6 class="h6Block h6BlockTop">Глубина подбородка</h6>
+        <hr>
+        <div class="sliderElems">
+            <button class="btn btn-secondary btnToggleSkin btnToggleSkinSmaller" onclick="substractElementStep('#chinDepthInput', defaultStep)"><img class="arrows" src="css/back.png"
+          alt=""></button>
+            <input id="chinDepthInput" name="chinLength" type="range" min="-1" max="1" step="0.1" value="0" oninput="changeTrackValue('.chinDepthOutput', this.value); callCustomization($(this).attr('name'), parseFloat(this.value));">
+            <button class="btn btn-secondary btnToggleSkin btnToggleSkinBigger" onclick="addElementStep('#chinDepthInput', defaultStep)"><img class="arrows" src="css/forward.png"
+          alt=""></button>
+            <output class="chinDepthOutput">0</output>
+        </div>
+        <h6 class="h6Block h6BlockTop">Ширина подбродка</h6>
+        <hr>
+        <div class="sliderElems">
+            <button class="btn btn-secondary btnToggleSkin btnToggleSkinSmaller" onclick="substractElementStep('#chinWidthInput', defaultStep)"><img class="arrows" src="css/back.png"
+          alt=""></button>
+            <input id="chinWidthInput" name="chinWidth" type="range" min="-1" max="1" step="0.1" value="0" oninput="changeTrackValue('.chinWidthOutput', this.value); callCustomization($(this).attr('name'), parseFloat(this.value));">
+            <button class="btn btn-secondary btnToggleSkin btnToggleSkinBigger" onclick="addElementStep('#chinWidthInput', defaultStep)"><img class="arrows" src="css/forward.png"
+          alt=""></button>
+            <output class="chinWidthOutput">0</output>
+        </div>
+        <h6 class="h6Block h6BlockTop">Подбородочный отступ</h6>
+        <hr>
+        <div class="sliderElems">
+            <button class="btn btn-secondary btnToggleSkin btnToggleSkinSmaller" onclick="substractElementStep('#chinIndentInput', defaultStep)"><img class="arrows" src="css/back.png"
+          alt=""></button>
+            <input id="chinIndentInput" name="chinShape" type="range" min="-1" max="1" step="0.1" value="0" oninput="changeTrackValue('.chinIndentOutput', this.value); callCustomization($(this).attr('name'), parseFloat(this.value));">
+            <button class="btn btn-secondary btnToggleSkin btnToggleSkinBigger" onclick="addElementStep('#chinIndentInput', defaultStep)"><img class="arrows" src="css/forward.png"
+          alt=""></button>
+            <output class="chinIndentOutput">0</output>
+        </div>
+    </div>
+
+    <div class="generalBlock neckBlock">
+        <h6 class="generalTitle neckTitle">Шея</h6>
+        <h6 class="h6Block h6BlockTop">Обхват шеи</h6>
+        <hr>
+        <div class="sliderElems">
+            <button class="btn btn-secondary btnToggleSkin btnToggleSkinSmaller" onclick="substractElementStep('#neckInput', defaultStep)"><img class="arrows" src="css/back.png"
+          alt=""></button>
+            <input id="neckInput" name="neckWidth" type="range" min="-1" max="1" step="0.1" value="0" oninput="changeTrackValue('.neckOutput', this.value); callCustomization($(this).attr('name'), parseFloat(this.value));">
+            <button class="btn btn-secondary btnToggleSkin btnToggleSkinBigger" onclick="addElementStep('#neckInput', defaultStep)"><img class="arrows" src="css/forward.png" alt=""></button>
+            <output class="neckOutput">0</output>
+        </div>
+    </div>
+
+    <div class="generalBlock featuresBlock">
+        <h6 class="generalTitle featuresTitle">Особенности</h6>
+        <h6 class="h6Block h6BlockTop">Сыпь</h6>
+        <hr>
+        <div class="sliderElems">
+            <button class="btn btn-secondary btnToggleSkin btnToggleSkinSmaller" onclick="substractElementStep('#rashInput', oneStep)"><img class="arrows" src="css/back.png" alt=""></button>
+            <input id="rashInput" name="blemishes" type="range" min="-1" max="23" step="1" value="-1" oninput="changeTrackValue('.rashOutput', this.value); callHeadOverlay($(this).attr('name'), parseInt(this.value))">
+            <button class="btn btn-secondary btnToggleSkin btnToggleSkinBigger" onclick="addElementStep('#rashInput', oneStep)"><img class="arrows" src="css/forward.png" alt=""></button>
+            <output class="rashOutput">-1</output>
+        </div>
+        <h6 class="h6Block h6BlockTop">Старение</h6>
+        <hr>
+        <div class="sliderElems">
+            <button class="btn btn-secondary btnToggleSkin btnToggleSkinSmaller" onclick="substractElementStep('#ageingInput', oneStep)"><img class="arrows" src="css/back.png" alt=""></button>
+            <input id="ageingInput" name="ageing" type="range" min="-1" max="14" step="1" value="-1" oninput="changeTrackValue('.ageingOutput', this.value); callHeadOverlay($(this).attr('name'), parseInt(this.value))">
+            <button class="btn btn-secondary btnToggleSkin btnToggleSkinBigger" onclick="addElementStep('#ageingInput', oneStep)"><img class="arrows" src="css/forward.png" alt=""></button>
+            <output class="ageingOutput">-1</output>
+        </div>
+        <h6 class="h6Block h6BlockTop">Цвет лица</h6>
+        <hr>
+        <div class="sliderElems">
+            <button class="btn btn-secondary btnToggleSkin btnToggleSkinSmaller" onclick="substractElementStep('#faceColorInput', oneStep)"><img class="arrows" src="css/back.png"
+          alt=""></button>
+            <input id="faceColorInput" name="complexion" type="range" min="-1" max="11" step="1" value="-1" oninput="changeTrackValue('.faceColorOutput', this.value); callHeadOverlay($(this).attr('name'), parseInt(this.value))">
+            <button class="btn btn-secondary btnToggleSkin btnToggleSkinBigger" onclick="addElementStep('#faceColorInput', oneStep)"><img class="arrows" src="css/forward.png" alt=""></button>
+            <output class="faceColorOutput">-1</output>
+        </div>
+        <h6 class="h6Block h6BlockTop">Солнечные ожоги</h6>
+        <hr>
+        <div class="sliderElems">
+            <button class="btn btn-secondary btnToggleSkin btnToggleSkinSmaller" onclick="substractElementStep('#sunburnInput', oneStep)"><img class="arrows" src="css/back.png" alt=""></button>
+            <input id="sunburnInput" name="sunDamage" type="range" min="-1" max="10" step="1" value="-1" oninput="changeTrackValue('.sunburnOutput', this.value); callHeadOverlay($(this).attr('name'), parseInt(this.value))">
+            <button class="btn btn-secondary btnToggleSkin btnToggleSkinBigger" onclick="addElementStep('#sunburnInput', oneStep)"><img class="arrows" src="css/forward.png" alt=""></button>
+            <output class="sunburnOutput">-1</output>
+        </div>
+        <h6 class="h6Block h6BlockTop">Родинки и веснушки</h6>
+        <hr>
+        <div class="sliderElems">
+            <button class="btn btn-secondary btnToggleSkin btnToggleSkinSmaller" onclick="substractElementStep('#frecklesInput', oneStep)"><img class="arrows" src="css/back.png"
+          alt=""></button>
+            <input id="frecklesInput" name="molesFreckles" type="range" min="-1" max="17" step="1" value="-1" oninput="changeTrackValue('.frecklesOutput', this.value); callHeadOverlay($(this).attr('name'), parseInt(this.value))">
+            <button class="btn btn-secondary btnToggleSkin btnToggleSkinBigger" onclick="addElementStep('#frecklesInput', oneStep)"><img class="arrows" src="css/forward.png" alt=""></button>
+            <output class="frecklesOutput">-1</output>
+        </div>
+        <h6 class="h6Block h6BlockTop">Родинки на теле</h6>
+        <hr>
+        <div class="sliderElems">
+            <button class="btn btn-secondary btnToggleSkin btnToggleSkinSmaller" onclick="substractElementStep('#birthmarksInput', oneStep)"><img class="arrows" src="css/back.png"
+          alt=""></button>
+            <input id="birthmarksInput" name="bodyBlemishes" type="range" min="-1" max="11" step="1" value="-1" oninput="changeTrackValue('.birthmarksOutput', this.value); callHeadOverlay($(this).attr('name'), parseInt(this.value))">
+            <button class="btn btn-secondary btnToggleSkin btnToggleSkinBigger" onclick="addElementStep('#birthmarksInput', oneStep)"><img class="arrows" src="css/forward.png" alt=""></button>
+            <output class="birthmarksOutput">-1</output>
+        </div>
+
+        <h6 id="chestHairH6" class="h6Block h6BlockTop">Волосы на груди</h6>
+        <hr id="chestHairHr">
+        <div id="chestHairDiv" class="sliderElems">
+            <button class="btn btn-secondary btnToggleSkin btnToggleSkinSmaller" onclick="substractElementStep('#chestHairInput', oneStep)"><img class="arrows" src="css/back.png"
+          alt=""></button>
+            <input id="chestHairInput" name="chestHair" type="range" min="-1" max="16" step="1" value="-1" oninput="changeTrackValue('.chestHairOutput', this.value); callHeadOverlay($(this).attr('name'), parseInt(this.value))">
+            <button class="btn btn-secondary btnToggleSkin btnToggleSkinBigger" onclick="addElementStep('#chestHairInput', oneStep)"><img class="arrows" src="css/forward.png" alt=""></button>
+            <output class="chestHairOutput">-1</output>
+        </div>
+    </div>
+
+    <div class="generalBlock clothesBlock">
+        <h6 class="generalTitle clothesTitle">Одежда</h6>
+        <h6 class="h6Block h6BlockTop">Торс</h6>
+        <hr>
+        <h6 id="torsoText" class="h6Block h6BlockBottom">Вариант</h6>
+        <button id="changeTop" class="btn btn-dark btn-sm buttonEdit bottomElems"><img class="imgEdit" src="css/edit.png"
+        alt=""></button>
+        <h6 class="h6Block h6BlockTop">Ноги</h6>
+        <hr>
+        <h6 id="pantsText" class="h6Block h6BlockBottom">Вариант</h6>
+        <button id="changeLegs" class="btn btn-dark btn-sm buttonEdit bottomElems"><img class="imgEdit" src="css/edit.png"
+        alt=""></button>
+        <h6 class="h6Block h6BlockTop">Обувь</h6>
+        <hr>
+        <h6 id="shoesText" class="h6Block h6BlockBottom">Вариант</h6>
+        <button id="changeShoes" class="btn btn-dark btn-sm buttonEdit bottomElems"><img class="imgEdit" src="css/edit.png"
+        alt=""></button>
+    </div>
+
+    <div id="changeTopMale" class="secondaryBlock">
+        <h6 class="generalTitle topTitle">Верхняя одежда</h6>
+        <div class="insideSecondaryBlock">
+            <a class="clothes" name="torso" href="#" onclick="changeHtmlTextCustomize($(this).attr('name'), parseInt(71));">
+                <div class="generalImgBlock">
+                    <img class="generalImg" src="css/MaleTorsos/torso_71.jpg" alt="">
+                </div>
+            </a>
+            <a class="clothes" name="torso" href="#" onclick="changeHtmlTextCustomize($(this).attr('name'), parseInt(80));">
+                <div class="generalImgBlock">
+                    <img class="generalImg topOptionTextImg" src="css/MaleTorsos/torso_80.jpg" alt="">
+                </div>
+            </a>
+            <a class="clothes" name="torso" href="#" onclick="changeHtmlTextCustomize($(this).attr('name'), parseInt(271));">
+                <div class="generalImgBlock">
+                    <img class="generalImg" src="css/MaleTorsos/torso_271.jpg" alt="">
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <div id="changeTopFemale" class="secondaryBlock">
+        <h6 class="generalTitle topTitle">Верхняя одежда</h6>
+        <div class="insideSecondaryBlock">
+            <a class="clothes" name="torso" href="#" onclick="changeHtmlTextCustomize($(this).attr('name'), parseInt(49));">
+                <div class="generalImgBlock">
+                    <img class="generalImg" src="css/FemaleTorsos/torso_49.jpg" alt="">
+                </div>
+            </a>
+            <a class="clothes" name="torso" href="#" onclick="changeHtmlTextCustomize($(this).attr('name'), parseInt(280));">
+                <div class="generalImgBlock">
+                    <img class="generalImg topOptionTextImg" src="css/FemaleTorsos/torso_280.jpg" alt="">
+                </div>
+            </a>
+            <a class="clothes" name="torso" href="#" onclick="changeHtmlTextCustomize($(this).attr('name'), parseInt(377));">
+                <div class="generalImgBlock">
+                    <img class="generalImg" src="css/FemaleTorsos/torso_377.jpg" alt="">
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <div id="changeLegsMale" class="secondaryBlock">
+        <h6 class="generalTitle topTitle">Нижняя одежда</h6>
+        <div class="insideSecondaryBlock">
+            <a class="clothes" name="pants" href="#" onclick="changeHtmlTextCustomize($(this).attr('name'), parseInt(1));">
+                <div class="generalImgBlock">
+                    <img class="generalImg" src="css/MaleLegs/leg_1.jpg" alt="">
+                </div>
+            </a>
+            <a class="clothes" name="pants" href="#" onclick="changeHtmlTextCustomize($(this).attr('name'), parseInt(3));">
+                <div class="generalImgBlock">
+                    <img class="generalImg topOptionTextImg" src="css/MaleLegs/leg_3.jpg" alt="">
+                </div>
+            </a>
+            <a class="clothes" name="pants" href="#" onclick="changeHtmlTextCustomize($(this).attr('name'), parseInt(5));">
+                <div class="generalImgBlock">
+                    <img class="generalImg" src="css/MaleLegs/leg_5.jpg" alt="">
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <div id="changeLegsFemale" class="secondaryBlock">
+        <h6 class="generalTitle topTitle">Нижняя одежда</h6>
+        <div class="insideSecondaryBlock">
+            <a class="clothes" name="pants" href="#" onclick="changeHtmlTextCustomize($(this).attr('name'), parseInt(2));">
+                <div class="generalImgBlock">
+                    <img class="generalImg" src="css/FemaleLegs/legs_2.jpg" alt="">
+                </div>
+            </a>
+            <a class="clothes" name="pants" href="#" onclick="changeHtmlTextCustomize($(this).attr('name'), parseInt(3));">
+                <div class="generalImgBlock">
+                    <img class="generalImg topOptionTextImg" src="css/FemaleLegs/legs_3.jpg" alt="">
+                </div>
+            </a>
+            <a class="clothes" name="pants" href="#" onclick="changeHtmlTextCustomize($(this).attr('name'), parseInt(12));">
+                <div class="generalImgBlock">
+                    <img class="generalImg" src="css/FemaleLegs/legs_12.jpg" alt="">
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <div id="changeShoesMale" class="secondaryBlock">
+        <h6 class="generalTitle topTitle">Обувь</h6>
+        <div class="insideSecondaryBlock">
+            <a class="clothes" name="shoes" href="#" onclick="changeHtmlTextCustomize($(this).attr('name'), parseInt(1));">
+                <div class="generalImgBlock">
+                    <img class="generalImg" src="css/MaleShoes/shoes_1.jpg" alt="">
+                </div>
+            </a>
+            <a class="clothes" name="shoes" href="#" onclick="changeHtmlTextCustomize($(this).attr('name'), parseInt(4));">
+                <div class="generalImgBlock">
+                    <img class="generalImg topOptionTextImg" src="css/MaleShoes/shoes_4.jpg" alt="">
+                </div>
+            </a>
+            <a class="clothes" name="shoes" href="#" onclick="changeHtmlTextCustomize($(this).attr('name'), parseInt(5));">
+                <div class="generalImgBlock">
+                    <img class="generalImg" src="css/MaleShoes/shoes_5.jpg" alt="">
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <div id="changeShoesFemale" class="secondaryBlock">
+        <h6 class="generalTitle topTitle">Обувь</h6>
+        <div class="insideSecondaryBlock">
+            <a class="clothes" name="shoes" href="#" onclick="changeHtmlTextCustomize($(this).attr('name'), parseInt(1));">
+                <div class="generalImgBlock">
+                    <img class="generalImg" src="css/FemaleShoes/shoes_1.jpg" alt="">
+                </div>
+            </a>
+            <a class="clothes" name="shoes" href="#" onclick="changeHtmlTextCustomize($(this).attr('name'), parseInt(3));">
+                <div class="generalImgBlock">
+                    <img class="generalImg topOptionTextImg" src="css/FemaleShoes/shoes_3.jpg" alt="">
+                </div>
+            </a>
+            <a class="clothes" name="shoes" href="#" onclick="changeHtmlTextCustomize($(this).attr('name'), parseInt(5));">
+                <div class="generalImgBlock">
+                    <img class="generalImg" src="css/FemaleShoes/shoes_5.jpg" alt="">
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <script src="charcreatorFullB.js"></script>
+</body>
+
+</html>
